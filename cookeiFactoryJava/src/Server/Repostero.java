@@ -8,20 +8,15 @@
 //Paquete al que pertenece la clase
 package Server;
 
-import ServerInterface.PanelSCM;
-import java.awt.Color;
-import java.io.Serializable;
-import static java.lang.Math.random;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.concurrent.locks.ReentrantLock;
-import javax.swing.JTextField;
+
 
 
 
 //Importes
-
+import java.io.Serializable;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 

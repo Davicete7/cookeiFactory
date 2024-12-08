@@ -10,18 +10,14 @@ package ServerInterface;
 
 
 //Importes
-import com.sun.tools.javac.Main;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.JTextField;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
 import Server.Repostero;
 import Server.Empaquetador;
 import Server.Cafeteria;
-import Server.Almacen;
 import Server.Horno;
 
 

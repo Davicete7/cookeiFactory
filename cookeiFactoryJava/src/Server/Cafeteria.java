@@ -10,12 +10,10 @@ package Server;
 
 
 //Importes
-import java.awt.Color;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.Semaphore;
-import ServerInterface.PanelSCM;
 import java.io.Serializable;
 
 
