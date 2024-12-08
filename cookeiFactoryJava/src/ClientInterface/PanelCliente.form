@@ -100,7 +100,9 @@
                       <Component id="iconoCookienFactory" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="441" max="-2" attributes="0"/>
                       <Component id="panelCliente" min="-2" pref="266" max="-2" attributes="0"/>
-                      <EmptySpace pref="562" max="32767" attributes="0"/>
+                      <EmptySpace pref="509" max="32767" attributes="0"/>
+                      <Component id="iconoMinimizado" min="-2" pref="47" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="labelCerrar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="411" max="-2" attributes="0"/>
                   </Group>
@@ -121,6 +123,11 @@
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="iconoMinimizado" min="-2" pref="16" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -158,6 +165,21 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Panel Cliente"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="iconoMinimizado">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Fototeca/iconoMinimizado.PNG"/>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="iconoMinimizadoMouseClicked"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="iconoMinimizadoMouseEntered"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="iconoMinimizadoMouseExited"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

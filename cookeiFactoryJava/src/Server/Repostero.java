@@ -118,7 +118,7 @@ public class Repostero extends Thread implements Serializable
 
                     //Depositamos las galletas en cualquier horno disponible
                     accion = "DEPOSITANDO";
-                    tandaGalletasDesperdiciadas = 0;//Aqui devolveriamos con el metodo de llamada a dejar las galletas en el horno las galletas que se han desperdiciado
+                    tandaGalletasDesperdiciadas = depositarGalletas(tandaGalletas);
                     totalGalletasDesperdiciadas += tandaGalletasDesperdiciadas;
 
                     
@@ -148,7 +148,15 @@ public class Repostero extends Thread implements Serializable
     }
     
     
-    
+    public int depositarGalletas(int _tandaGalletas)
+    {
+        //Aqui depositaremos las galletas que se desperdicien
+        int _tandaGalletasDesperdiciadas = 0;   //Por defecto ninguna
+        
+        
+        
+        return 0;
+    }
     
     public void comprobamosParadaManual()
     {

@@ -10,10 +10,10 @@ package ServerInterface;
 
 
 //Importes
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.Toolkit;
-import javax.swing.JTextField;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.List;
 import Server.Repostero;
 import Server.Empaquetador;
@@ -50,6 +50,14 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         this.listaHorno = _listaHorno;
         this.listaEmpaquetadores = _listaEmpaquetadores;
         this.cafeteria = _cafeteria;
+        
+        
+        //Para que cuando vuelva de minimizarse se coloque bien
+        this.addWindowStateListener(e -> {
+            if (e.getNewState() == JFrame.NORMAL) {
+                setLocationRelativeTo(null); // Centra la ventana en la pantalla
+            }
+        });
     }
 
     /**
@@ -68,6 +76,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         labelCerrar = new javax.swing.JLabel();
         iconoCookienFactory = new javax.swing.JLabel();
         panelSCM = new javax.swing.JLabel();
+        iconoMinimizado = new javax.swing.JLabel();
         lableCafeteria = new javax.swing.JLabel();
         respostero1 = new javax.swing.JLabel();
         respostero2 = new javax.swing.JLabel();
@@ -143,6 +152,20 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         panelSCM.setForeground(new java.awt.Color(0, 0, 0));
         panelSCM.setText("Panel SCM");
 
+        iconoMinimizado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/iconoMinimizado.PNG"))); // NOI18N
+        iconoMinimizado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        iconoMinimizado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iconoMinimizadoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                iconoMinimizadoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                iconoMinimizadoMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
         headerLayout.setHorizontalGroup(
@@ -151,7 +174,9 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 .addComponent(iconoCookienFactory)
                 .addGap(455, 455, 455)
                 .addComponent(panelSCM, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 548, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 495, Short.MAX_VALUE)
+                .addComponent(iconoMinimizado, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(labelCerrar)
                 .addGap(411, 411, 411))
         );
@@ -159,14 +184,18 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerLayout.createSequentialGroup()
                 .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panelSCM))
                     .addComponent(iconoCookienFactory, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(headerLayout.createSequentialGroup()
                         .addComponent(labelCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panelSCM)))
                 .addContainerGap())
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(iconoMinimizado, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         backgroung.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, 60));
@@ -420,6 +449,45 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         // TODO add your handling code here:
     }//GEN-LAST:event_textoCafeteriaActionPerformed
 
+    private void iconoMinimizadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconoMinimizadoMouseClicked
+        Point startLocation = this.getLocation();
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int taskbarHeight = Toolkit.getDefaultToolkit().getScreenInsets(this.getGraphicsConfiguration()).bottom;
+
+        Point endLocation = new Point(
+                (int) screenSize.getWidth() / 2,
+                (int) screenSize.getHeight() - taskbarHeight
+        );
+
+        Timer timer = new Timer(10, null);
+        timer.addActionListener(new ActionListener() {
+            double progress = 0;
+            final double step = 0.05;
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                progress += step;
+                if (progress >= 1.0) {
+                    timer.stop();
+                    setExtendedState(JFrame.ICONIFIED);
+                } else {
+                    int x = (int) (startLocation.x + progress * (endLocation.x - startLocation.x));
+                    int y = (int) (startLocation.y + progress * (endLocation.y - startLocation.y));
+                    setLocation(x, y);
+                }
+            }
+        });
+        timer.start();
+    }//GEN-LAST:event_iconoMinimizadoMouseClicked
+
+    private void iconoMinimizadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconoMinimizadoMouseEntered
+        iconoMinimizado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/iconoMinimizado2.png")));
+    }//GEN-LAST:event_iconoMinimizadoMouseEntered
+
+    private void iconoMinimizadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconoMinimizadoMouseExited
+        iconoMinimizado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/iconoMinimizado.png")));
+    }//GEN-LAST:event_iconoMinimizadoMouseExited
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposteros(int identificadorTexto)
     {
@@ -503,6 +571,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel horno2;
     private javax.swing.JLabel horno3;
     private javax.swing.JLabel iconoCookienFactory;
+    private javax.swing.JLabel iconoMinimizado;
     private javax.swing.JLabel imagenCafeteria;
     private javax.swing.JLabel imagenCartelCafeteria;
     private javax.swing.JLabel labelCerrar;
