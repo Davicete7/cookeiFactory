@@ -10,7 +10,7 @@ package Server;
 
 
 //Importes
-
+import java.util.concurrent.locks.ReentrantLock;
 
 
 
@@ -22,19 +22,23 @@ public class Almacen
     private final int cantidadGalletasConsumidas = 100;
 
     //Atributos de la clase
-    private boolean almacenCompleto = false;    //Cuando se cree el almacen, nunca estara lleno
+    private int galletasTotal = 0;
+    
+    
+        //Lo usaremos para gestionar la cantidad de galletas que van al almacen
+    private ReentrantLock lockAlmacen = new ReentrantLock();
 
     
-    //Contructor
     //Contructor vacio
+    public Almacen(){};
     //Contructores alternativos o sobrecargados
     
     
     //Getters
-    public boolean getAlmacenCompleto(){return almacenCompleto;}
+    public int getCapacidadMaxima(){return capacidadMaxima;}
+    public int getGalletasTotal(){return galletasTotal;}
     
     //Setters
-    public void setAlmacenCompleto(boolean _almacenCompleto){this.almacenCompleto = _almacenCompleto;}
     
     
     //To String (Solo si es necesario)
@@ -42,5 +46,24 @@ public class Almacen
     
     
     //Metodos de la clase
+    public void añadirGalletas(int galletas)
+    {
+        
+    }
+    
+    public void consumirGalletas(int cantidadGalletasConsumir)
+    {
+        int galletasRestantes = galletasTotal - cantidadGalletasConsumir;
+        
+        //Comprobamos que si es inferior a 0, se establezca en 0
+        if (galletasRestantes < 0)
+        {
+            galletasTotal = 0;
+        }
+        else
+        {
+            galletasTotal = galletasRestantes;
+        }
+    }
     
 }

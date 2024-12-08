@@ -31,7 +31,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private int xMouse;
     private int yMouse;
     private List<Repostero> listaReposteros;
-    private List<Horno> listaHorno;
+    private List<Horno> listaHornos;
     private List<Empaquetador> listaEmpaquetadores;
     private Cafeteria cafeteria;
     
@@ -47,7 +47,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         
         //Asignamos los atributos
         this.listaReposteros = _listaReposteros;
-        this.listaHorno = _listaHorno;
+        this.listaHornos = _listaHorno;
         this.listaEmpaquetadores = _listaEmpaquetadores;
         this.cafeteria = _cafeteria;
         
@@ -101,6 +101,12 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         textoColaCafeteria = new javax.swing.JTextField();
         imagenCafeteria = new javax.swing.JLabel();
         imagenCartelCafeteria = new javax.swing.JLabel();
+        labelNumeroDeGalletasHornos = new javax.swing.JLabel();
+        labelHorneandoHornos = new javax.swing.JLabel();
+        numeroDeGalletasHorno1 = new javax.swing.JTextField();
+        numeroDeGalletasHorno2 = new javax.swing.JTextField();
+        numeroDeGalletasHorno3 = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -249,17 +255,17 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         empaquetador1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         empaquetador1.setForeground(new java.awt.Color(0, 0, 0));
         empaquetador1.setText("Empaquetador 1");
-        backgroung.add(empaquetador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 170, 40));
+        backgroung.add(empaquetador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 170, 40));
 
         empaquetador2.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         empaquetador2.setForeground(new java.awt.Color(0, 0, 0));
         empaquetador2.setText("Empaquetador 2");
-        backgroung.add(empaquetador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, 170, 40));
+        backgroung.add(empaquetador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, 170, 40));
 
         empaquetador3.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         empaquetador3.setForeground(new java.awt.Color(0, 0, 0));
         empaquetador3.setText("Empaquetador 3");
-        backgroung.add(empaquetador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 480, 170, 40));
+        backgroung.add(empaquetador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, 170, 40));
 
         menuDerecha.setBackground(new java.awt.Color(64, 166, 38));
 
@@ -280,7 +286,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             .addGroup(menuDerechaLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         menuDerechaLayout.setVerticalGroup(
             menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -383,6 +389,53 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
 
         imagenCartelCafeteria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/cartelCafeteria.PNG"))); // NOI18N
         backgroung.add(imagenCartelCafeteria, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 60, 50));
+
+        labelNumeroDeGalletasHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        labelNumeroDeGalletasHornos.setForeground(new java.awt.Color(0, 0, 0));
+        labelNumeroDeGalletasHornos.setText("Numero Galletas");
+        backgroung.add(labelNumeroDeGalletasHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 170, 40));
+
+        labelHorneandoHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        labelHorneandoHornos.setForeground(new java.awt.Color(0, 0, 0));
+        labelHorneandoHornos.setText("Horneando");
+        backgroung.add(labelHorneandoHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 170, 40));
+
+        numeroDeGalletasHorno1.setEditable(false);
+        numeroDeGalletasHorno1.setBackground(new java.awt.Color(238, 212, 130));
+        numeroDeGalletasHorno1.setForeground(new java.awt.Color(0, 0, 0));
+        numeroDeGalletasHorno1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        numeroDeGalletasHorno1.setFocusable(false);
+        numeroDeGalletasHorno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numeroDeGalletasHorno1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(numeroDeGalletasHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 120, -1));
+
+        numeroDeGalletasHorno2.setEditable(false);
+        numeroDeGalletasHorno2.setBackground(new java.awt.Color(238, 212, 130));
+        numeroDeGalletasHorno2.setForeground(new java.awt.Color(0, 0, 0));
+        numeroDeGalletasHorno2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        numeroDeGalletasHorno2.setFocusable(false);
+        numeroDeGalletasHorno2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numeroDeGalletasHorno2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(numeroDeGalletasHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 120, -1));
+
+        numeroDeGalletasHorno3.setEditable(false);
+        numeroDeGalletasHorno3.setBackground(new java.awt.Color(238, 212, 130));
+        numeroDeGalletasHorno3.setForeground(new java.awt.Color(0, 0, 0));
+        numeroDeGalletasHorno3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        numeroDeGalletasHorno3.setFocusable(false);
+        numeroDeGalletasHorno3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numeroDeGalletasHorno3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(numeroDeGalletasHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 120, -1));
+        backgroung.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 540, 10));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -488,6 +541,18 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         iconoMinimizado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/iconoMinimizado.png")));
     }//GEN-LAST:event_iconoMinimizadoMouseExited
 
+    private void numeroDeGalletasHorno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numeroDeGalletasHorno1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_numeroDeGalletasHorno1ActionPerformed
+
+    private void numeroDeGalletasHorno2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numeroDeGalletasHorno2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_numeroDeGalletasHorno2ActionPerformed
+
+    private void numeroDeGalletasHorno3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numeroDeGalletasHorno3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_numeroDeGalletasHorno3ActionPerformed
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposteros(int identificadorTexto)
     {
@@ -559,6 +624,23 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         });
         
     }
+    
+    
+    
+    public JTextField getTextoGalletasEnHorno(int identificadorTexto)
+    {
+            switch (identificadorTexto) 
+            {
+                case 0:
+                    return numeroDeGalletasHorno1;
+                case 1:
+                    return numeroDeGalletasHorno2;
+                case 2:
+                    return numeroDeGalletasHorno3;
+            }
+           //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel almacen;
@@ -574,10 +656,16 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel iconoMinimizado;
     private javax.swing.JLabel imagenCafeteria;
     private javax.swing.JLabel imagenCartelCafeteria;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel labelCerrar;
+    private javax.swing.JLabel labelHorneandoHornos;
+    private javax.swing.JLabel labelNumeroDeGalletasHornos;
     private javax.swing.JLabel lableCafeteria;
     private javax.swing.JLabel logoMedioGrande;
     private javax.swing.JPanel menuDerecha;
+    private javax.swing.JTextField numeroDeGalletasHorno1;
+    private javax.swing.JTextField numeroDeGalletasHorno2;
+    private javax.swing.JTextField numeroDeGalletasHorno3;
     private javax.swing.JLabel panelSCM;
     private javax.swing.JLabel respostero1;
     private javax.swing.JLabel respostero2;
@@ -617,6 +705,21 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 //Checkeo la cafeteria
                 textoCafeteria.setText(cafeteria.getReposteroAtendido());
                 textoColaCafeteria.setText(cafeteria.getColaReposterosCafeteria());
+                
+                
+                
+                //Checkeo hornos
+                for (int identificador = 0; identificador < listaHornos.size(); identificador++)
+                {
+                    //Actualizamos las galletas que hay en cada horno
+                    int numeroGalletas = listaHornos.get(identificador).getCantidadGalletas();
+                    getTextoGalletasEnHorno(identificador).setText(String.valueOf(numeroGalletas));
+                }
+                
+                
+                
+                //Checkeo almacen
+                
 
                 //Generamos un breve retardo para no colapsar memoria con comprobaciones
                 Thread.sleep(100);

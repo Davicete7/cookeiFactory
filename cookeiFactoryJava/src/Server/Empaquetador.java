@@ -11,6 +11,8 @@ package Server;
 
 //Importes
 import java.io.Serializable;
+import java.time.Duration;
+import java.util.Random;
 
 
 //CLASE
@@ -23,9 +25,21 @@ public class Empaquetador extends Thread implements Serializable
     
     //Atributos de la clase
     private int identificador;
-    private Horno horno;        //Los empaquetadores tienen un horno asociado a el
+    private int galletasRecogidas = 0;
+    private int tandasGalletasRecogidas = 0; 
+    private Horno horno;                        //Los empaquetadores tienen un horno asociado a el
+    private Almacen almacen;
+    
+    
+        //Con esta semilla generaremos la aleatoriedad
+    Random aleatorio = new Random();
     
     //Contructor
+    public Empaquetador(int _identificador, Almacen _almacen)
+    {
+        this.identificador = _identificador;
+        this.almacen = _almacen;
+    }
     //Contructor vacio
     //Contructores alternativos o sobrecargados
     
@@ -43,5 +57,40 @@ public class Empaquetador extends Thread implements Serializable
     
     
     //Metodos de la clase
+    public void vaciarHorno(Horno horno)
+    {
+        boolean hornoVaciado = false;
+        
+        while(!hornoVaciado)
+        {
+            try
+            {
+                //Realizamos las tandas de 5 en 5 para que las empaquetemos siempre de 100 en 100
+                for(tandasGalletasRecogidas = 0; tandasGalletasRecogidas < 5; tandasGalletasRecogidas++)
+                {
+                    //Tanda de recogida galletas
+                    galletasRecogidas += horno.sacarHorneadoGalletas(cantidadRecogidaGalletas);
+                    Thread.sleep(500 + aleatorio.nextInt(1000));
+                }
+                
+                //Empaquetamos las galletas para llevarlas al almacen
+                almacen.añadirGalletas(galletasRecogidas);
+                
+                
+                //Comprobamos si ha terminado de vaciar el horno
+                if(galletasRecogidas == horno.getCapacidadMaxima())
+                {
+                    hornoVaciado = true;
+                }
+            }
+            catch(InterruptedException error)
+            {
+                System.out.println("Se ha generado un error mientras el empaquetador["+identificador+"] estaba vaciando el Horno["+horno.getIdentificador()+"] --> " + error);
+            }
+        }
+        
+        //Como ya ha terminado su vaciado de horno, restauramos las galletas recogidas a 0
+        galletasRecogidas = 0;
+    }
     
 }

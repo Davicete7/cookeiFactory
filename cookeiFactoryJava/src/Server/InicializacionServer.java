@@ -46,12 +46,26 @@ public class InicializacionServer
         //Creamos la cafeteria
         Cafeteria cafeteria = new Cafeteria();
         
+        //Creamos el almacen
+        Almacen almacen = new Almacen();
+        
+        //Creamos los empaquetadores
+        for (int i = 1; i <= 3; i++)
+        {
+            //Creamos el empaquetador
+            Empaquetador empaquetador = new Empaquetador(i,almacen);
+            //Lo añadimos a la lista para posteriormente referenciarlo en los hornos y al RMI
+            listaEmpaquetadores.add(empaquetador);
+            //Inicializamos el hilo
+            
+        }
         
         //Creamos los hornos
         for (int i = 1; i <= 3; i++)
         {
-            Horno horno = new Horno();
-            //Lo añadimos a la lista para posteriormente referenciarlo en los reposteros
+            //Creamo el horno
+            Horno horno = new Horno(i,listaEmpaquetadores.get(i-1));
+            //Lo añadimos a la lista para posteriormente referenciarlo en los reposteros y al RMI
             listaHornos.add(horno);
             //Inicializamos el hilo
             horno.start();
@@ -63,9 +77,9 @@ public class InicializacionServer
         {
             //Creamos al repostero
             Repostero repostero = new Repostero(i, listaHornos,cafeteria);
-            //Lo añadimos a si lista
+            //Lo añadimos a la lista para referenciarlo al RMI
             listaReposteros.add(repostero);
-            //Ponemos al repostero a crear galletas
+            //Inicializamos el hilo
             repostero.start();
         }
         

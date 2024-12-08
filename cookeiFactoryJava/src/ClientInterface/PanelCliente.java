@@ -18,6 +18,9 @@ import java.util.List;
 import SharedZone.InterfazImplementacionRMI;
 import java.rmi.RemoteException;
 import Server.Repostero;
+import Server.Horno;
+import Server.Empaquetador;
+import Server.Almacen;
 
 
 
@@ -106,6 +109,9 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         textoHorno2GalletasHorneadas = new javax.swing.JTextField();
         textoHorno3GalletasHorneadas = new javax.swing.JTextField();
         separadorColumnaHornos = new javax.swing.JSeparator();
+        panelControlHorneado1 = new javax.swing.JTextField();
+        panelControlHorneado2 = new javax.swing.JTextField();
+        panelControlHorneado3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -480,7 +486,7 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                 textoHorno1GalletasHorneadasActionPerformed(evt);
             }
         });
-        backgroung.add(textoHorno1GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 650, 200, -1));
+        backgroung.add(textoHorno1GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 550, 200, -1));
 
         textoHorno2GalletasHorneadas.setEditable(false);
         textoHorno2GalletasHorneadas.setBackground(new java.awt.Color(238, 212, 130));
@@ -492,7 +498,7 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                 textoHorno2GalletasHorneadasActionPerformed(evt);
             }
         });
-        backgroung.add(textoHorno2GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 550, 200, -1));
+        backgroung.add(textoHorno2GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 200, -1));
 
         textoHorno3GalletasHorneadas.setEditable(false);
         textoHorno3GalletasHorneadas.setBackground(new java.awt.Color(238, 212, 130));
@@ -504,10 +510,46 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                 textoHorno3GalletasHorneadasActionPerformed(evt);
             }
         });
-        backgroung.add(textoHorno3GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 200, -1));
+        backgroung.add(textoHorno3GalletasHorneadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 650, 200, -1));
 
         separadorColumnaHornos.setOrientation(javax.swing.SwingConstants.VERTICAL);
         backgroung.add(separadorColumnaHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 550, 10, 130));
+
+        panelControlHorneado1.setEditable(false);
+        panelControlHorneado1.setBackground(new java.awt.Color(255, 255, 255));
+        panelControlHorneado1.setForeground(new java.awt.Color(0, 0, 0));
+        panelControlHorneado1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        panelControlHorneado1.setFocusable(false);
+        panelControlHorneado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                panelControlHorneado1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(panelControlHorneado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 550, 200, -1));
+
+        panelControlHorneado2.setEditable(false);
+        panelControlHorneado2.setBackground(new java.awt.Color(255, 255, 255));
+        panelControlHorneado2.setForeground(new java.awt.Color(0, 0, 0));
+        panelControlHorneado2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        panelControlHorneado2.setFocusable(false);
+        panelControlHorneado2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                panelControlHorneado2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(panelControlHorneado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 600, 200, -1));
+
+        panelControlHorneado3.setEditable(false);
+        panelControlHorneado3.setBackground(new java.awt.Color(255, 255, 255));
+        panelControlHorneado3.setForeground(new java.awt.Color(0, 0, 0));
+        panelControlHorneado3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        panelControlHorneado3.setFocusable(false);
+        panelControlHorneado3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                panelControlHorneado3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(panelControlHorneado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 650, 200, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -645,6 +687,18 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         iconoMinimizado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/iconoMinimizado.png")));
     }//GEN-LAST:event_iconoMinimizadoMouseExited
 
+    private void panelControlHorneado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_panelControlHorneado1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panelControlHorneado1ActionPerformed
+
+    private void panelControlHorneado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_panelControlHorneado2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panelControlHorneado2ActionPerformed
+
+    private void panelControlHorneado3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_panelControlHorneado3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panelControlHorneado3ActionPerformed
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposterosGalletas(int identificadorTexto)
     {
@@ -685,6 +739,41 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
             //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
             return null;
     }
+    
+    
+    public JTextField getTextosTotalGalletasHorneadas(int identificadorTexto)
+    {
+            switch (identificadorTexto) 
+            {
+                case 0:
+                    return textoHorno1GalletasHorneadas;
+                case 1:
+                    return textoHorno2GalletasHorneadas;
+                case 2:
+                    return textoHorno3GalletasHorneadas;
+            }
+            
+            //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
+    public JTextField getPanelControlHorneado(int identificadorTexto)
+    {
+            switch (identificadorTexto) 
+            {
+                case 0:
+                    return panelControlHorneado1;
+                case 1:
+                    return panelControlHorneado2;
+                case 2:
+                    return panelControlHorneado3;
+            }
+            
+            //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -740,6 +829,9 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel logoMedioGrande;
     private javax.swing.JPanel menuDerecha;
     private javax.swing.JLabel panelCliente;
+    private javax.swing.JTextField panelControlHorneado1;
+    private javax.swing.JTextField panelControlHorneado2;
+    private javax.swing.JTextField panelControlHorneado3;
     private javax.swing.JLabel respostero1;
     private javax.swing.JLabel respostero2;
     private javax.swing.JLabel respostero3;
@@ -793,6 +885,23 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                         }
                         
                         //HORNOS
+                        List<Horno> listaHornos = metodosServer.getListaHornos();
+                        for (int indice = 0; indice < listaHornos.size(); indice++)
+                        {
+                            //Checkeamos el total galletas horneadas
+                            int totalGalletasHorneadas = listaHornos.get(indice).getTotalGalletasHorneadas();
+                            getTextosTotalGalletasHorneadas(indice).setText(String.valueOf(totalGalletasHorneadas));
+                            
+                            //Check si esta horneando (SI o NO)
+                            if(listaHornos.get(indice).getEstaHorneando())
+                            {
+                                getPanelControlHorneado(indice).setBackground(Color.red);
+                            }
+                            else
+                            {
+                                getPanelControlHorneado(indice).setBackground(Color.white);
+                            }
+                        }
                         
                         
                         //EMPAQUETADORES
