@@ -104,11 +104,8 @@ public class Horno extends Thread implements Serializable
                     
                     //Avisamos al empaquetador para que vacie el horno
                     empaquetador.vaciarHorno(this);
-                    
-                    
-                    
-                    
                     //Ahora esperamos a que se vacie el horno
+                    
                 }
                 else
                 {
