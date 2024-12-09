@@ -453,7 +453,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         labelNumeroDeGalletasHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         labelNumeroDeGalletasHornos.setForeground(new java.awt.Color(0, 0, 0));
         labelNumeroDeGalletasHornos.setText("Numero Galletas");
-        backgroung.add(labelNumeroDeGalletasHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 170, 40));
+        backgroung.add(labelNumeroDeGalletasHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 170, 40));
 
         labelHorneandoHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         labelHorneandoHornos.setForeground(new java.awt.Color(0, 0, 0));

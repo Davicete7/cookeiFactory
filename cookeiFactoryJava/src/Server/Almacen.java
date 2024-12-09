@@ -27,9 +27,7 @@ public class Almacen implements Serializable
     private int galletasTotalConsumidas = 0;
     private int galletasTotalAlmacenadas = 0;
     
-    
-        //Lo usaremos para gestionar la cantidad de galletas que van al almacen
-    private ReentrantLock lockAlmacen = new ReentrantLock();
+
 
     
     //Contructor vacio
@@ -51,56 +49,31 @@ public class Almacen implements Serializable
     
     
     //Metodos de la clase
-    public void añadirGalletas(int galletas)
+    public synchronized void añadirGalletas(int galletas)
     {
-        try
+ 
+        //Revisamos si el almacen esta lleno
+        while(galletasTotal == capacidadMaxima)
         {
-            lockAlmacen.lock();
-            //Revisamos si el almacen esta lleno
-            if(galletasTotal == capacidadMaxima)
+            //Espera activa
+            try
             {
-                lockAlmacen.wait();
+                Thread.sleep(1000);
             }
-            
-            //Revisamos si con las galletas que vamos a depositar, el almacen supera su capacidad maxima
-            if((galletasTotal + galletas) > capacidadMaxima)
+            catch(InterruptedException error)
             {
-                //Sacamos la cantidad exacta a depositar para que el almacen este lleno, y dejamos la otra parte para cuando no lo este
-                int parteDepositada = (galletasTotal + galletas) - capacidadMaxima;
-                galletasTotal += parteDepositada;
-                
-                //Log de almacenamiento total
-                galletasTotalAlmacenadas += parteDepositada;
-                
-                int parteEspera = galletas - parteDepositada;
-                
-                //Esperamos a que nos avisen de que el almacen ya no esta tan lleno
-                lockAlmacen.wait();
-                
-                //No hace falta comprobar de nuevo si el alamcen superara la capacidad maxima con este deposito ya que sabemos que se consumiran 100 galletas
-                galletasTotal += parteEspera;
-                
-                //Log de almacenamiento total
-                galletasTotalAlmacenadas += parteEspera;
+                System.out.println("Se ha producido un error mientras se realizaba una espera activa para poder añadir galletas al almacen --> " + error);
             }
-            else
-            {
-                galletasTotal += galletas;
-                
-                //Log de almacenamiento total
-                galletasTotalAlmacenadas += galletas;
-            }
-            
         }
-        catch(InterruptedException error)
-        {
-            System.out.println("Se ha producido un error mientras se añadian galletas al almacen --> " + error);
-        }
-        finally
-        {
-            //Siempre desbloqueamos el lock
-            lockAlmacen.unlock();
-        }
+
+
+        galletasTotal += galletas;
+
+        //Log de almacenamiento total
+        galletasTotalAlmacenadas += galletas;
+
+
+
         
     }
     
@@ -117,10 +90,7 @@ public class Almacen implements Serializable
         {
             galletasTotal = galletasRestantes;
             galletasTotalConsumidas += cantidadGalletasConsumir;
-        }
-        
-        //Como aqui ya se han consumido las galletas, notificamos por si el lock estuviese esperando
-        lockAlmacen.notify();
+        }        
     }
     
 }
