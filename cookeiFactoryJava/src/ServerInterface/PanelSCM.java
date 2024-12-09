@@ -96,7 +96,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         almacenJlabel = new javax.swing.JLabel();
         logoMedioGrande = new javax.swing.JLabel();
         textoAlmacen = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        botonComer = new javax.swing.JButton();
         textoRepostero1 = new javax.swing.JTextField();
         textoRepostero2 = new javax.swing.JTextField();
         textoRepostero3 = new javax.swing.JTextField();
@@ -288,7 +288,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         textoAlmacen.setEditable(false);
         textoAlmacen.setBackground(new java.awt.Color(51, 204, 0));
         textoAlmacen.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
-        textoAlmacen.setForeground(new java.awt.Color(255, 255, 255));
+        textoAlmacen.setForeground(new java.awt.Color(0, 0, 0));
         textoAlmacen.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         textoAlmacen.setFocusable(false);
         textoAlmacen.addActionListener(new java.awt.event.ActionListener() {
@@ -297,14 +297,30 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(64, 166, 38));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/botonComerSinFondo.PNG"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
+        botonComer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/botonComerSinFondo.PNG"))); // NOI18N
+        botonComer.setBorder(null);
+        botonComer.setBorderPainted(false);
+        botonComer.setContentAreaFilled(false);
+        botonComer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonComer.setFocusPainted(false);
+        botonComer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonComerMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botonComerMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botonComerMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                botonComerMousePressed(evt);
+            }
+        });
+        botonComer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonComerActionPerformed(evt);
             }
         });
 
@@ -325,7 +341,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                         .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(menuDerechaLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botonComer, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         menuDerechaLayout.setVerticalGroup(
@@ -336,7 +352,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(textoAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonComer, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46)
                 .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -649,9 +665,26 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         // TODO add your handling code here:
     }//GEN-LAST:event_textoAlmacenActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botonComerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonComerActionPerformed
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
         almacen.consumirGalletas(almacen.getCantidadGalletasConsumidas());
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_botonComerActionPerformed
+
+    private void botonComerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonComerMouseEntered
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
+            }//GEN-LAST:event_botonComerMouseEntered
+
+    private void botonComerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonComerMouseExited
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
+    }//GEN-LAST:event_botonComerMouseExited
+
+    private void botonComerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonComerMouseClicked
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
+    }//GEN-LAST:event_botonComerMouseClicked
+
+    private void botonComerMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonComerMousePressed
+        botonComer.setBackground(new java.awt.Color(64, 166, 38));
+    }//GEN-LAST:event_botonComerMousePressed
 
     //METODOS CREADOS A MANO
     public JTextField getTextosReposteros(int identificadorTexto)
@@ -773,6 +806,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JTextField accionEmpaquetador3;
     private javax.swing.JLabel almacenJlabel;
     private javax.swing.JPanel backgroung;
+    private javax.swing.JButton botonComer;
     private javax.swing.JLabel empaquetador1;
     private javax.swing.JLabel empaquetador2;
     private javax.swing.JLabel empaquetador3;
@@ -784,7 +818,6 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel iconoMinimizado;
     private javax.swing.JLabel imagenCafeteria;
     private javax.swing.JLabel imagenCartelCafeteria;
-    private javax.swing.JButton jButton1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel labelCerrar;
     private javax.swing.JLabel labelHorneandoHornos;

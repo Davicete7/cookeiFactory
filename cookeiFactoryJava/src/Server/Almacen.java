@@ -24,6 +24,8 @@ public class Almacen implements Serializable
 
     //Atributos de la clase
     private int galletasTotal = 0;
+    private int galletasTotalConsumidas = 0;
+    private int galletasTotalAlmacenadas = 0;
     
     
         //Lo usaremos para gestionar la cantidad de galletas que van al almacen
@@ -39,6 +41,8 @@ public class Almacen implements Serializable
     public int getCapacidadMaxima(){return capacidadMaxima;}
     public int getGalletasTotal(){return galletasTotal;}
     public int getCantidadGalletasConsumidas() {return cantidadGalletasConsumidas;}
+    public int getGalletasTotalConsumidas(){return galletasTotalConsumidas;}
+    public int getGalletasTotalAlmacenadas(){return galletasTotalAlmacenadas;}
     //Setters
     
     
@@ -64,6 +68,10 @@ public class Almacen implements Serializable
                 //Sacamos la cantidad exacta a depositar para que el almacen este lleno, y dejamos la otra parte para cuando no lo este
                 int parteDepositada = (galletasTotal + galletas) - capacidadMaxima;
                 galletasTotal += parteDepositada;
+                
+                //Log de almacenamiento total
+                galletasTotalAlmacenadas += parteDepositada;
+                
                 int parteEspera = galletas - parteDepositada;
                 
                 //Esperamos a que nos avisen de que el almacen ya no esta tan lleno
@@ -71,10 +79,16 @@ public class Almacen implements Serializable
                 
                 //No hace falta comprobar de nuevo si el alamcen superara la capacidad maxima con este deposito ya que sabemos que se consumiran 100 galletas
                 galletasTotal += parteEspera;
+                
+                //Log de almacenamiento total
+                galletasTotalAlmacenadas += parteEspera;
             }
             else
             {
                 galletasTotal += galletas;
+                
+                //Log de almacenamiento total
+                galletasTotalAlmacenadas += galletas;
             }
             
         }
@@ -102,10 +116,11 @@ public class Almacen implements Serializable
         else
         {
             galletasTotal = galletasRestantes;
+            galletasTotalConsumidas += cantidadGalletasConsumir;
         }
         
         //Como aqui ya se han consumido las galletas, notificamos por si el lock estuviese esperando
-        lockAlmacen.notifyAll();
+        lockAlmacen.notify();
     }
     
 }

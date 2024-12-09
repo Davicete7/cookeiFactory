@@ -28,6 +28,7 @@ public class Horno extends Thread implements Serializable
     private int cantidadGalletas = 0;           //Por defecto cuando se cree el horno siempre estara vacio
     private int totalGalletasHorneadas = 0;     //Por defecto cuando se cree el horno no llevara ninguna galleta horneada
     private boolean estaHorneando = false;      //Por defecto cuando se cree el horno no estara en proceso de horneado hasta que no se llene
+    private boolean estaEmpaquetando = false;
     
     
     
@@ -47,6 +48,7 @@ public class Horno extends Thread implements Serializable
     public int getCapacidadMaxima(){return capacidadMaxima;}
     public int getTotalGalletasHorneadas(){return totalGalletasHorneadas;}
     public boolean getEstaHorneando(){return estaHorneando;}
+    public boolean getEstaEmpaquetando(){return estaEmpaquetando;}
     
     
     //Setters
@@ -98,12 +100,22 @@ public class Horno extends Thread implements Serializable
                     //Anotamos que las galletas ya estan horneadas
                     totalGalletasHorneadas += capacidadMaxima;
                     
+                    //Termina el horneado
+                    estaHorneando = false;
+                    
+                    //Empieza empaquetado
+                    estaEmpaquetando = true;
+                    
                     //Avisamos al empaquetador para que vacie el horno
                     empaquetador.vaciarHorno(this);
                     //Ahora esperamos a que se vacie el horno
                     
-                    //Termina el horneado
-                    estaHorneando = false;
+                    
+                    //Termina empaquetado
+                    estaEmpaquetando = false;
+                    
+                    
+                    
                     
                 }
                 else

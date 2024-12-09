@@ -23,16 +23,18 @@ public class MetodosParaCliente extends UnicastRemoteObject implements InterfazI
     private List<Horno> listaHornos = new ArrayList<>();
     private List<Empaquetador> listaEmpaquetadores = new ArrayList<>();
     private Cafeteria cafeteria;
+    private Almacen almacen;
     
     
     
     //Contructor
-    public MetodosParaCliente (List<Repostero> _listaReposteros, List<Horno> _listaHornos, List<Empaquetador> _listaEmpaquetadores, Cafeteria _cafeteria) throws RemoteException
+    public MetodosParaCliente (List<Repostero> _listaReposteros, List<Horno> _listaHornos, List<Empaquetador> _listaEmpaquetadores, Cafeteria _cafeteria, Almacen _almacen) throws RemoteException
     {
         this.listaReposteros = _listaReposteros;
         this.listaHornos = _listaHornos;
         this.listaEmpaquetadores = _listaEmpaquetadores;
         this.cafeteria = _cafeteria;
+        this.almacen = _almacen;
     }
     
     
@@ -44,4 +46,5 @@ public class MetodosParaCliente extends UnicastRemoteObject implements InterfazI
     public List<Repostero> getListaReposteros(){return listaReposteros;}
     public List<Horno> getListaHornos(){return listaHornos;}
     public List<Empaquetador> getListaEmpaquetadores(){return listaEmpaquetadores;}  
+    public Almacen getAlmacen(){return almacen;}
 }

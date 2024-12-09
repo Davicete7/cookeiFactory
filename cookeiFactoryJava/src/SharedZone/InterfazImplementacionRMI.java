@@ -8,6 +8,7 @@
 package SharedZone;
 
 //Importes
+import Server.Almacen;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import Server.Repostero;
@@ -25,5 +26,6 @@ public interface InterfazImplementacionRMI extends Remote
     public List<Repostero> getListaReposteros() throws RemoteException;
     public List<Horno> getListaHornos() throws RemoteException;
     public List<Empaquetador> getListaEmpaquetadores() throws RemoteException;
+    public Almacen getAlmacen()throws RemoteException;
     
 }

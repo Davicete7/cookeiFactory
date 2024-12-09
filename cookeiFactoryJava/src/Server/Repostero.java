@@ -48,6 +48,7 @@ public class Repostero extends Thread implements Serializable
         //Usamos estos atributos para generar la pausa del hilo
     private boolean paradaManual = false;       //Por defecto la parada manual se pondra a true despues de crear el hilo
     private ReentrantLock lock = new ReentrantLock();
+    private ReentrantLock lockHorno = new ReentrantLock();
     
     
 
@@ -157,7 +158,7 @@ public class Repostero extends Thread implements Serializable
     
     
     //El metodo implica synchronized para evitar que dos reposteros metan a la vez galletas en el mismo horno
-    public synchronized int depositarGalletas(int _tandaGalletas)
+    public int depositarGalletas(int _tandaGalletas)
     {
         //Aqui depositaremos las galletas que se desperdicien
         int _tandaGalletasDesperdiciadas = 0;   //Por defecto ninguna
@@ -165,34 +166,45 @@ public class Repostero extends Thread implements Serializable
         //Para indicar que ya hemos depositado las galletas en el horno
         boolean depositoTerminado = false;
         
-        
-        //Antes de elegir el horno en al que vamos a depositar las galletas
-        while (!depositoTerminado)
+        try
         {
-            for(int indexHornos = 0; indexHornos < listaHornos.size(); indexHornos++)
+            lockHorno.lock();
+            //Antes de elegir el horno en al que vamos a depositar las galletas
+            while (!depositoTerminado)
             {
-                if(listaHornos.get(indexHornos).getCantidadGalletas() <= listaHornos.get(indexHornos).getCapacidadMaxima())
+                for(int indexHornos = 0; indexHornos < listaHornos.size(); indexHornos++)
                 {
-                    _tandaGalletasDesperdiciadas = listaHornos.get(indexHornos).añadirGalletas(_tandaGalletas);
-                    depositoTerminado = true;
-                    break;  //Break del bucle for
-                }
-                else
-                {
-                    try
+                    if(listaHornos.get(indexHornos).getCantidadGalletas() < listaHornos.get(indexHornos).getCapacidadMaxima() && !listaHornos.get(indexHornos).getEstaHorneando() && !listaHornos.get(indexHornos).getEstaEmpaquetando())
                     {
-                        Thread.sleep(100);
+                        _tandaGalletasDesperdiciadas = listaHornos.get(indexHornos).añadirGalletas(_tandaGalletas);
+                        depositoTerminado = true;
+                        break;  //Break del bucle for
                     }
-                    catch(InterruptedException error)
+                    else
                     {
-                        System.out.println("Durante una espera de seguridad para liberar memoria a la hora de encontrar un horno que no este lleno se a interrumpido la ejecucion de codigo generando el siguiente error --> " + error);
+                        try
+                        {
+                            Thread.sleep(100);
+                        }
+                        catch(InterruptedException error)
+                        {
+                            System.out.println("Durante una espera de seguridad para liberar memoria a la hora de encontrar un horno que no este lleno se a interrumpido la ejecucion de codigo generando el siguiente error --> " + error);
+                        }
                     }
                 }
             }
         }
+        catch (Error error)
+        {
+            System.out.println("Se ha producido un error en el repostero ["+identificador+"] mientras e le asignaba un horno al que transportar las galletas producidas --> ) + error");
+        }
+        finally
+        {
+            //Siempre desbloqueamos el lock de los hornos
+            lockHorno.unlock();
+        }
         
-        
-        return 0;
+        return _tandaGalletasDesperdiciadas;
     }
     
     

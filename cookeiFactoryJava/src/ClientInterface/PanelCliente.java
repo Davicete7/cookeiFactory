@@ -112,6 +112,11 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         panelControlHorneado1 = new javax.swing.JTextField();
         panelControlHorneado2 = new javax.swing.JTextField();
         panelControlHorneado3 = new javax.swing.JTextField();
+        botonPararRepostero1 = new javax.swing.JButton();
+        botonPararRepostero2 = new javax.swing.JButton();
+        botonPararRepostero3 = new javax.swing.JButton();
+        botonPararRepostero4 = new javax.swing.JButton();
+        botonPararRepostero5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -551,6 +556,71 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         });
         backgroung.add(panelControlHorneado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 650, 200, -1));
 
+        botonPararRepostero1.setBackground(new java.awt.Color(255, 0, 0));
+        botonPararRepostero1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        botonPararRepostero1.setForeground(new java.awt.Color(0, 0, 0));
+        botonPararRepostero1.setText("PARAR");
+        botonPararRepostero1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonPararRepostero1.setFocusPainted(false);
+        botonPararRepostero1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPararRepostero1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(botonPararRepostero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 150, 130, 20));
+
+        botonPararRepostero2.setBackground(new java.awt.Color(255, 0, 0));
+        botonPararRepostero2.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        botonPararRepostero2.setForeground(new java.awt.Color(0, 0, 0));
+        botonPararRepostero2.setText("PARAR");
+        botonPararRepostero2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonPararRepostero2.setFocusPainted(false);
+        botonPararRepostero2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPararRepostero2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(botonPararRepostero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 220, 130, 20));
+
+        botonPararRepostero3.setBackground(new java.awt.Color(255, 0, 0));
+        botonPararRepostero3.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        botonPararRepostero3.setForeground(new java.awt.Color(0, 0, 0));
+        botonPararRepostero3.setText("PARAR");
+        botonPararRepostero3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonPararRepostero3.setFocusPainted(false);
+        botonPararRepostero3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPararRepostero3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(botonPararRepostero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 290, 130, 20));
+
+        botonPararRepostero4.setBackground(new java.awt.Color(255, 0, 0));
+        botonPararRepostero4.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        botonPararRepostero4.setForeground(new java.awt.Color(0, 0, 0));
+        botonPararRepostero4.setText("PARAR");
+        botonPararRepostero4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonPararRepostero4.setFocusPainted(false);
+        botonPararRepostero4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPararRepostero4ActionPerformed(evt);
+            }
+        });
+        backgroung.add(botonPararRepostero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 350, 130, 20));
+
+        botonPararRepostero5.setBackground(new java.awt.Color(255, 0, 0));
+        botonPararRepostero5.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        botonPararRepostero5.setForeground(new java.awt.Color(0, 0, 0));
+        botonPararRepostero5.setText("PARAR");
+        botonPararRepostero5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonPararRepostero5.setFocusPainted(false);
+        botonPararRepostero5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPararRepostero5ActionPerformed(evt);
+            }
+        });
+        backgroung.add(botonPararRepostero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 410, 130, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -699,6 +769,123 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         // TODO add your handling code here:
     }//GEN-LAST:event_panelControlHorneado3ActionPerformed
 
+    private void botonPararRepostero2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPararRepostero2ActionPerformed
+        //Hay que generar las dos casuisticas en funcion del texto que haya en el boton
+        if (botonPararRepostero2.getText().equals("PARAR"))
+        {
+            //Debemos de para la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero2.setText("REANUDAR");
+            botonPararRepostero2.setBackground(Color.green);
+        }
+        else
+        {
+            //Debemos de reanudar la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero2.setText("PARAR");
+            botonPararRepostero2.setBackground(Color.red);
+        }
+    }//GEN-LAST:event_botonPararRepostero2ActionPerformed
+
+    private void botonPararRepostero3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPararRepostero3ActionPerformed
+        //Hay que generar las dos casuisticas en funcion del texto que haya en el boton
+        if (botonPararRepostero3.getText().equals("PARAR"))
+        {
+            //Debemos de para la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero3.setText("REANUDAR");
+            botonPararRepostero3.setBackground(Color.green);
+        }
+        else
+        {
+            //Debemos de reanudar la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero3.setText("PARAR");
+            botonPararRepostero3.setBackground(Color.red);
+        }
+    }//GEN-LAST:event_botonPararRepostero3ActionPerformed
+
+    private void botonPararRepostero4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPararRepostero4ActionPerformed
+        //Hay que generar las dos casuisticas en funcion del texto que haya en el boton
+        if (botonPararRepostero4.getText().equals("PARAR"))
+        {
+            //Debemos de para la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero4.setText("REANUDAR");
+            botonPararRepostero4.setBackground(Color.green);
+        }
+        else
+        {
+            //Debemos de reanudar la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero4.setText("PARAR");
+            botonPararRepostero4.setBackground(Color.red);
+        }
+    }//GEN-LAST:event_botonPararRepostero4ActionPerformed
+
+    private void botonPararRepostero5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPararRepostero5ActionPerformed
+        //Hay que generar las dos casuisticas en funcion del texto que haya en el boton
+        if (botonPararRepostero5.getText().equals("PARAR"))
+        {
+            //Debemos de para la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero5.setText("REANUDAR");
+            botonPararRepostero5.setBackground(Color.green);
+        }
+        else
+        {
+            //Debemos de reanudar la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero5.setText("PARAR");
+            botonPararRepostero5.setBackground(Color.red);
+        }
+    }//GEN-LAST:event_botonPararRepostero5ActionPerformed
+
+    private void botonPararRepostero1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPararRepostero1ActionPerformed
+       //Hay que generar las dos casuisticas en funcion del texto que haya en el boton
+        if (botonPararRepostero1.getText().equals("PARAR"))
+        {
+            //Debemos de para la ejecucion del repostero
+            try
+            {
+                metodosServer.getListaReposteros().get(0).setParadaManual(true);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 1");
+            }
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero1.setText("REANUDAR");
+            botonPararRepostero1.setBackground(Color.green);
+        }
+        else
+        {
+            //Debemos de reanudar la ejecucion del repostero
+            
+            
+            //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
+            botonPararRepostero1.setText("PARAR");
+            botonPararRepostero1.setBackground(Color.red);
+        }
+    }//GEN-LAST:event_botonPararRepostero1ActionPerformed
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposterosGalletas(int identificadorTexto)
     {
@@ -819,6 +1006,11 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel backgroung;
+    private javax.swing.JButton botonPararRepostero1;
+    private javax.swing.JButton botonPararRepostero2;
+    private javax.swing.JButton botonPararRepostero3;
+    private javax.swing.JButton botonPararRepostero4;
+    private javax.swing.JButton botonPararRepostero5;
     private javax.swing.JPanel header;
     private javax.swing.JLabel horno1;
     private javax.swing.JLabel horno2;
@@ -903,10 +1095,11 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                             }
                         }
                         
-                        
-                        //EMPAQUETADORES
+
                         
                         //ALMACEN
+                        textoAlmacenGalletasAlmacenadas.setText(String.valueOf(metodosServer.getAlmacen().getGalletasTotalAlmacenadas()));
+                        textoAlmacenGalletasConsumidas.setText(String.valueOf(metodosServer.getAlmacen().getCantidadGalletasConsumidas()));
                         
                         
                         //Finalizamos el checkeo para el cliente y esperamos un segundo hasta el siguiente checkeo

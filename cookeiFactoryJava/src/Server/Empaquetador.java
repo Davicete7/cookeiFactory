@@ -78,7 +78,9 @@ public class Empaquetador extends Thread implements Serializable
                 
                 //Empaquetamos las galletas para llevarlas al almacen
                 accion = "TRANSPORTANDO";
+                Thread.sleep(2000 + aleatorio.nextInt(4000));
                 almacen.añadirGalletas(galletasRecogidas);
+                
                 
                 
                 //Comprobamos si ha terminado de vaciar el horno

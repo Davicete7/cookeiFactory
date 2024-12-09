@@ -116,7 +116,7 @@ public class InicializacionServer
          **********************************/
         try
         {
-            MetodosParaCliente objetoTraspasable = new MetodosParaCliente(listaReposteros, listaHornos, listaEmpaquetadores, cafeteria);
+            MetodosParaCliente objetoTraspasable = new MetodosParaCliente(listaReposteros, listaHornos, listaEmpaquetadores, cafeteria,almacen);
             LocateRegistry.createRegistry(1099);
             
             //Le pasamos los objetos al "Server"
