@@ -38,7 +38,7 @@ public class Almacen implements Serializable
     //Getters
     public int getCapacidadMaxima(){return capacidadMaxima;}
     public int getGalletasTotal(){return galletasTotal;}
-    
+    public int getCantidadGalletasConsumidas() {return cantidadGalletasConsumidas;}
     //Setters
     
     

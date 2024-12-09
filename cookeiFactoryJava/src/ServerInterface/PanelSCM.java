@@ -19,6 +19,7 @@ import Server.Repostero;
 import Server.Empaquetador;
 import Server.Cafeteria;
 import Server.Horno;
+import Server.Almacen;
 
 
 
@@ -34,9 +35,10 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private List<Horno> listaHornos;
     private List<Empaquetador> listaEmpaquetadores;
     private Cafeteria cafeteria;
+    private Almacen almacen;
     
     
-    public PanelSCM(List<Repostero> _listaReposteros, List<Horno> _listaHorno, List<Empaquetador> _listaEmpaquetadores, Cafeteria _cafeteria) {
+    public PanelSCM(List<Repostero> _listaReposteros, List<Horno> _listaHorno, List<Empaquetador> _listaEmpaquetadores, Cafeteria _cafeteria, Almacen _almacen) {
         initComponents();
         Image icono = Toolkit.getDefaultToolkit().getImage(PanelSCM.class.getResource("/Fototeca/iconoAplicacion.png"));
         setIconImage(icono);
@@ -50,6 +52,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         this.listaHornos = _listaHorno;
         this.listaEmpaquetadores = _listaEmpaquetadores;
         this.cafeteria = _cafeteria;
+        this.almacen = _almacen;
         
         
         //Para que cuando vuelva de minimizarse se coloque bien
@@ -90,8 +93,10 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         empaquetador2 = new javax.swing.JLabel();
         empaquetador3 = new javax.swing.JLabel();
         menuDerecha = new javax.swing.JPanel();
-        almacen = new javax.swing.JLabel();
+        almacenJlabel = new javax.swing.JLabel();
         logoMedioGrande = new javax.swing.JLabel();
+        textoAlmacen = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         textoRepostero1 = new javax.swing.JTextField();
         textoRepostero2 = new javax.swing.JTextField();
         textoRepostero3 = new javax.swing.JTextField();
@@ -107,6 +112,9 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         numeroDeGalletasHorno2 = new javax.swing.JTextField();
         numeroDeGalletasHorno3 = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
+        accionEmpaquetador2 = new javax.swing.JTextField();
+        accionEmpaquetador3 = new javax.swing.JTextField();
+        accionEmpaquetador1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -269,11 +277,36 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
 
         menuDerecha.setBackground(new java.awt.Color(64, 166, 38));
 
-        almacen.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        almacen.setForeground(new java.awt.Color(0, 0, 0));
-        almacen.setText("Almacen");
+        almacenJlabel.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        almacenJlabel.setForeground(new java.awt.Color(0, 0, 0));
+        almacenJlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        almacenJlabel.setText("Almacen");
+        almacenJlabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         logoMedioGrande.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/fotoTamañoMedioCookeiFactorySinFondo.png"))); // NOI18N
+
+        textoAlmacen.setEditable(false);
+        textoAlmacen.setBackground(new java.awt.Color(51, 204, 0));
+        textoAlmacen.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
+        textoAlmacen.setForeground(new java.awt.Color(255, 255, 255));
+        textoAlmacen.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textoAlmacen.setFocusable(false);
+        textoAlmacen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textoAlmacenActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(64, 166, 38));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fototeca/botonComerSinFondo.PNG"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout menuDerechaLayout = new javax.swing.GroupLayout(menuDerecha);
         menuDerecha.setLayout(menuDerechaLayout);
@@ -281,19 +314,30 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuDerechaLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(almacen, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70))
+                .addGroup(menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(almacenJlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(textoAlmacen, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGap(81, 81, 81))
             .addGroup(menuDerechaLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(menuDerechaLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(menuDerechaLayout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         menuDerechaLayout.setVerticalGroup(
             menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuDerechaLayout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(almacen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 296, Short.MAX_VALUE)
+                .addContainerGap(154, Short.MAX_VALUE)
+                .addComponent(almacenJlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(textoAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
                 .addComponent(logoMedioGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -437,6 +481,42 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         backgroung.add(numeroDeGalletasHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 120, -1));
         backgroung.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 540, 10));
 
+        accionEmpaquetador2.setEditable(false);
+        accionEmpaquetador2.setBackground(new java.awt.Color(238, 212, 130));
+        accionEmpaquetador2.setForeground(new java.awt.Color(255, 255, 255));
+        accionEmpaquetador2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        accionEmpaquetador2.setFocusable(false);
+        accionEmpaquetador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accionEmpaquetador2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(accionEmpaquetador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 550, 170, -1));
+
+        accionEmpaquetador3.setEditable(false);
+        accionEmpaquetador3.setBackground(new java.awt.Color(238, 212, 130));
+        accionEmpaquetador3.setForeground(new java.awt.Color(255, 255, 255));
+        accionEmpaquetador3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        accionEmpaquetador3.setFocusable(false);
+        accionEmpaquetador3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accionEmpaquetador3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(accionEmpaquetador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 550, 170, -1));
+
+        accionEmpaquetador1.setEditable(false);
+        accionEmpaquetador1.setBackground(new java.awt.Color(238, 212, 130));
+        accionEmpaquetador1.setForeground(new java.awt.Color(255, 255, 255));
+        accionEmpaquetador1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        accionEmpaquetador1.setFocusable(false);
+        accionEmpaquetador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accionEmpaquetador1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(accionEmpaquetador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 550, 170, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -553,6 +633,26 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         // TODO add your handling code here:
     }//GEN-LAST:event_numeroDeGalletasHorno3ActionPerformed
 
+    private void accionEmpaquetador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accionEmpaquetador2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accionEmpaquetador2ActionPerformed
+
+    private void accionEmpaquetador3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accionEmpaquetador3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accionEmpaquetador3ActionPerformed
+
+    private void accionEmpaquetador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accionEmpaquetador1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accionEmpaquetador1ActionPerformed
+
+    private void textoAlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoAlmacenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textoAlmacenActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        almacen.consumirGalletas(almacen.getCantidadGalletasConsumidas());
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposteros(int identificadorTexto)
     {
@@ -641,9 +741,37 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
            //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
             return null;
     }
+    
+    
+    public JTextField getTextoAccionEmpaquetadores(int identificadorTexto)
+    {
+            switch (identificadorTexto) 
+            {
+                case 0:
+                    return accionEmpaquetador1;
+                case 1:
+                    return accionEmpaquetador2;
+                case 2:
+                    return accionEmpaquetador3;
+            }
+           //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
+    public void ponerColorTextoAccionEmpaquetadores(int identificador, String accion)
+    {
+        if (accion.equals("EMPAQUETANDO")) {getTextoAccionEmpaquetadores(identificador).setForeground(Color.black);} 
+        else if (accion.equals("TRANSPORTANDO")) {getTextoAccionEmpaquetadores(identificador).setForeground(Color.magenta);} 
+        else if (accion.equals("ESPERANDO")) {getTextoAccionEmpaquetadores(identificador).setForeground(Color.white);} 
+    }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel almacen;
+    private javax.swing.JTextField accionEmpaquetador1;
+    private javax.swing.JTextField accionEmpaquetador2;
+    private javax.swing.JTextField accionEmpaquetador3;
+    private javax.swing.JLabel almacenJlabel;
     private javax.swing.JPanel backgroung;
     private javax.swing.JLabel empaquetador1;
     private javax.swing.JLabel empaquetador2;
@@ -656,6 +784,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel iconoMinimizado;
     private javax.swing.JLabel imagenCafeteria;
     private javax.swing.JLabel imagenCartelCafeteria;
+    private javax.swing.JButton jButton1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel labelCerrar;
     private javax.swing.JLabel labelHorneandoHornos;
@@ -674,6 +803,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel respostero5;
     private javax.swing.JSeparator separadorHeader;
     private javax.swing.JSeparator separadorMenu;
+    private javax.swing.JTextField textoAlmacen;
     private javax.swing.JTextField textoCafeteria;
     private javax.swing.JTextField textoColaCafeteria;
     private javax.swing.JTextField textoRepostero1;
@@ -717,8 +847,23 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 }
                 
                 
+                //Checkeo empaquetadores
+                for (int identificador = 0; identificador < listaEmpaquetadores.size(); identificador++)
+                {
+                    //Recogemos la accion que estan realizando los empaquetadores
+                    String accion = listaEmpaquetadores.get(identificador).getAccion();
+                    
+                    //Escribimos la accion que esten realizando
+                    getTextoAccionEmpaquetadores(identificador).setText(accion);
+                    
+                    //Cambiamos el color del texto
+                    ponerColorTextoAccionEmpaquetadores(identificador, accion);
+                }
+                
                 
                 //Checkeo almacen
+                textoAlmacen.setText(String.valueOf(almacen.getGalletasTotal()));
+                
                 
 
                 //Generamos un breve retardo para no colapsar memoria con comprobaciones

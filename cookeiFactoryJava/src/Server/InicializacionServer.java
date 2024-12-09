@@ -97,7 +97,7 @@ public class InicializacionServer
         
         
         //Inicializamos la interfaz del servidor
-        PanelSCM interfazServer = new PanelSCM(listaReposteros, listaHornos, listaEmpaquetadores, cafeteria);
+        PanelSCM interfazServer = new PanelSCM(listaReposteros, listaHornos, listaEmpaquetadores, cafeteria,almacen);
         interfazServer.setVisible(true);
         Thread hiloInterfazServidor = new Thread(interfazServer);
         hiloInterfazServidor.start();

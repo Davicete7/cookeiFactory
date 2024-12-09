@@ -29,6 +29,7 @@ public class Empaquetador extends Thread implements Serializable
     private int tandasGalletasRecogidas = 0; 
     private Horno horno;                        //Los empaquetadores tienen un horno asociado a el
     private Almacen almacen;
+    private String accion = "ESPERANDO";        //Por defecto cuando se cree el objeto estara esperando
     
     
         //Con esta semilla generaremos la aleatoriedad
@@ -46,6 +47,7 @@ public class Empaquetador extends Thread implements Serializable
     
     //Getters
     public int getIdentificador(){return identificador;}
+    public String getAccion(){return accion;}
     //Setters
     //To String (Solo si es necesario)
     public String toStringIdentificador()
@@ -65,6 +67,7 @@ public class Empaquetador extends Thread implements Serializable
         {
             try
             {
+                accion = "EMPAQUETANDO";
                 //Realizamos las tandas de 5 en 5 para que las empaquetemos siempre de 100 en 100
                 for(tandasGalletasRecogidas = 0; tandasGalletasRecogidas < 5; tandasGalletasRecogidas++)
                 {
@@ -74,6 +77,7 @@ public class Empaquetador extends Thread implements Serializable
                 }
                 
                 //Empaquetamos las galletas para llevarlas al almacen
+                accion = "TRANSPORTANDO";
                 almacen.añadirGalletas(galletasRecogidas);
                 
                 
@@ -91,6 +95,7 @@ public class Empaquetador extends Thread implements Serializable
         
         //Como ya ha terminado su vaciado de horno, restauramos las galletas recogidas a 0
         galletasRecogidas = 0;
+        accion = "ESPERANDO";
     }
     
 }
