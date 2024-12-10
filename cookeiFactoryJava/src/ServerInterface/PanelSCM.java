@@ -37,6 +37,15 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private Cafeteria cafeteria;
     private Almacen almacen;
     
+
+    
+    
+    
+    //Hilos para las barras de progres
+    Thread hiloBarraProgresoHorno1 = null;
+    Thread hiloBarraProgresoHorno2 = null;
+    Thread hiloBarraProgresoHorno3 = null;
+    
     
     public PanelSCM(List<Repostero> _listaReposteros, List<Horno> _listaHorno, List<Empaquetador> _listaEmpaquetadores, Cafeteria _cafeteria, Almacen _almacen) {
         initComponents();
@@ -135,6 +144,8 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         estadoHorno1 = new javax.swing.JTextField();
         estadoHorno2 = new javax.swing.JTextField();
         barraProgresoHorno1 = new javax.swing.JProgressBar();
+        barraProgresoHorno2 = new javax.swing.JProgressBar();
+        barraProgresoHorno3 = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -773,7 +784,18 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             }
         });
         backgroung.add(estadoHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 120, -1));
+
+        barraProgresoHorno1.setBackground(new java.awt.Color(238, 212, 130));
+        barraProgresoHorno1.setForeground(new java.awt.Color(68, 41, 26));
         backgroung.add(barraProgresoHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 120, -1));
+
+        barraProgresoHorno2.setBackground(new java.awt.Color(238, 212, 130));
+        barraProgresoHorno2.setForeground(new java.awt.Color(68, 41, 26));
+        backgroung.add(barraProgresoHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 430, 120, -1));
+
+        barraProgresoHorno3.setBackground(new java.awt.Color(238, 212, 130));
+        barraProgresoHorno3.setForeground(new java.awt.Color(68, 41, 26));
+        backgroung.add(barraProgresoHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 430, 120, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1236,6 +1258,109 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
             return null;
     }
     
+    public void checkHornoHorneando(int indexHorno, JProgressBar progressBar)
+    {
+        //Comprobamos si el horno esta horneando
+        if(listaHornos.get(indexHorno).getEstaHorneando() && getHilosProgressBarHornos(indexHorno) == null)
+        {
+            //Hilo base para las progressBar
+            //Crear el hilo solo si no está en ejecución
+            Thread animacionThread = new Thread(new Runnable() 
+            {
+                @Override
+                public void run() 
+                {
+                    try 
+                    {
+                        //Tiempo total de la animación (8 segundos)
+                        int tiempoTotal = 8000;
+                        int unidadesPorAvance = 1;                              //Aumentar la barra en 1 unidad por vez (a mas unidades menos fluido)
+                        int totalAvances = 100 / unidadesPorAvance;             //Número de avances (100 avances)
+
+                        //Configurar la barra para que empiece en 0
+                        progressBar.setValue(0);
+
+                        //Ciclo para actualizar la barra de progreso
+                        for (int i = 0; i <= 100; i += unidadesPorAvance) {
+                            progressBar.setValue(i);                          //Actualiza el valor de la barra
+                            Thread.sleep(tiempoTotal / totalAvances);           //Espera para cada avance (400 ms) (en este caso)
+                        }
+                    } 
+                    catch (InterruptedException error) {
+                        System.out.println("Se ha producido un error mientras se elabora el hilo para el llenado de la progressBar --> " + error);
+                    } 
+                    finally 
+                    {
+                        // Al terminar, liberamos el hilo para que se pueda crear uno nuevo la próxima vez
+                        if (indexHorno == 0) 
+                        {
+                            hiloBarraProgresoHorno1 = null;
+                        }
+                        if (indexHorno == 1) 
+                        {
+                            hiloBarraProgresoHorno2 = null;
+                        }
+                        if (indexHorno == 2) 
+                        {
+                            hiloBarraProgresoHorno3 = null;
+                        }
+                    }
+                }
+            });
+            
+            //Iniciar el hilo de animación
+            if (indexHorno == 0) {
+                hiloBarraProgresoHorno1 = animacionThread;
+            }
+            else if (indexHorno == 1) {
+                hiloBarraProgresoHorno2 = animacionThread;
+            }
+            else if (indexHorno == 2) {
+                hiloBarraProgresoHorno3 = animacionThread;
+            }
+
+            //Iniciamos el hilo
+            animacionThread.start();
+        }
+        else if (!listaHornos.get(indexHorno).getEstaHorneando() && !listaHornos.get(indexHorno).getEstaEmpaquetando()&& listaHornos.get(indexHorno).getAccion().equals("LLENANDOSE")) 
+        {
+            //Se vacia si esta en proceso de llenado
+            progressBar.setValue(0);
+        }    
+    }
+    
+
+    
+    public JProgressBar getProgressBarHornos(int identificadorHorno)
+    {
+            switch (identificadorHorno) 
+            {
+                case 0:
+                    return barraProgresoHorno1;
+                case 1:
+                    return barraProgresoHorno2;
+                case 2:
+                    return barraProgresoHorno3;
+            }
+           //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
+    public Thread getHilosProgressBarHornos(int identificadorHilo)
+    {
+        switch (identificadorHilo) 
+            {
+                case 0:
+                    return hiloBarraProgresoHorno1;
+                case 1:
+                    return hiloBarraProgresoHorno2;
+                case 2:
+                    return hiloBarraProgresoHorno3;
+            }
+           //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1245,6 +1370,8 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel almacenJlabel;
     private javax.swing.JPanel backgroung;
     private javax.swing.JProgressBar barraProgresoHorno1;
+    private javax.swing.JProgressBar barraProgresoHorno2;
+    private javax.swing.JProgressBar barraProgresoHorno3;
     private javax.swing.JButton botonComer;
     private javax.swing.JLabel empaquetador1;
     private javax.swing.JLabel empaquetador2;
@@ -1342,6 +1469,9 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                     ponerColorTextoHornos(identificador, accion);
                     //Luego cambio el texto
                     getTextoAccionHornos(identificador).setText(accion);
+                    
+                    //Actualizamos los progressBar
+                    checkHornoHorneando(identificador, getProgressBarHornos(identificador));
                 }
                 
                 

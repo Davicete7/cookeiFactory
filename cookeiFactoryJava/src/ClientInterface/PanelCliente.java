@@ -1163,7 +1163,7 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                         
                         //ALMACEN
                         textoAlmacenGalletasAlmacenadas.setText(String.valueOf(metodosServer.getAlmacen().getGalletasTotalAlmacenadas()));
-                        textoAlmacenGalletasConsumidas.setText(String.valueOf(metodosServer.getAlmacen().getCantidadGalletasConsumidas()));
+                        textoAlmacenGalletasConsumidas.setText(String.valueOf(metodosServer.getAlmacen().getGalletasTotalConsumidas()));
                         
                         //Finalizamos el checkeo para el cliente y esperamos un segundo hasta el siguiente checkeo
                         Thread.sleep(1000);
