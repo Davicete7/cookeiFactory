@@ -27,5 +27,6 @@ public interface InterfazImplementacionRMI extends Remote
     public List<Horno> getListaHornos() throws RemoteException;
     public List<Empaquetador> getListaEmpaquetadores() throws RemoteException;
     public Almacen getAlmacen()throws RemoteException;
+    public void setParadaManualDesdeCliente(boolean _paradaManual, int indexRepostero) throws RemoteException;
     
 }

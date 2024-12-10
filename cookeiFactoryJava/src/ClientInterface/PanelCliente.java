@@ -774,7 +774,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         if (botonPararRepostero2.getText().equals("PARAR"))
         {
             //Debemos de para la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(true, 1);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 2");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero2.setText("REANUDAR");
@@ -783,7 +790,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         else
         {
             //Debemos de reanudar la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(false, 1);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 2");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero2.setText("PARAR");
@@ -796,7 +810,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         if (botonPararRepostero3.getText().equals("PARAR"))
         {
             //Debemos de para la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(true, 2);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 3");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero3.setText("REANUDAR");
@@ -805,7 +826,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         else
         {
             //Debemos de reanudar la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(false, 2);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 3");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero3.setText("PARAR");
@@ -818,7 +846,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         if (botonPararRepostero4.getText().equals("PARAR"))
         {
             //Debemos de para la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(true, 3);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 4");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero4.setText("REANUDAR");
@@ -827,7 +862,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         else
         {
             //Debemos de reanudar la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(false, 3);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 4");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero4.setText("PARAR");
@@ -840,7 +882,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         if (botonPararRepostero5.getText().equals("PARAR"))
         {
             //Debemos de para la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(true, 4);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 5");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero5.setText("REANUDAR");
@@ -849,7 +898,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         else
         {
             //Debemos de reanudar la ejecucion del repostero
-            
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(false, 4);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 5");
+            }
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
             botonPararRepostero5.setText("PARAR");
@@ -864,7 +920,7 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
             //Debemos de para la ejecucion del repostero
             try
             {
-                metodosServer.getListaReposteros().get(0).setParadaManual(true);
+                metodosServer.setParadaManualDesdeCliente(true, 0);
             }
             catch(RemoteException error)
             {
@@ -878,6 +934,14 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
         else
         {
             //Debemos de reanudar la ejecucion del repostero
+            try
+            {
+                metodosServer.setParadaManualDesdeCliente(false, 0);
+            }
+            catch(RemoteException error)
+            {
+                System.out.println("Se ha producido el siguiente error mientras se intentaba parar el repostero 1");
+            }
             
             
             //Una vez cambiado el estado del repostero actualizamos la apariencia del boton
@@ -1100,7 +1164,6 @@ public class PanelCliente extends javax.swing.JFrame implements Runnable{
                         //ALMACEN
                         textoAlmacenGalletasAlmacenadas.setText(String.valueOf(metodosServer.getAlmacen().getGalletasTotalAlmacenadas()));
                         textoAlmacenGalletasConsumidas.setText(String.valueOf(metodosServer.getAlmacen().getCantidadGalletasConsumidas()));
-                        
                         
                         //Finalizamos el checkeo para el cliente y esperamos un segundo hasta el siguiente checkeo
                         Thread.sleep(1000);

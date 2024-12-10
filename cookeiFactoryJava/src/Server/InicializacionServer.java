@@ -56,7 +56,7 @@ public class InicializacionServer
             Empaquetador empaquetador = new Empaquetador(i,almacen);
             //Lo añadimos a la lista para posteriormente referenciarlo en los hornos y al RMI
             listaEmpaquetadores.add(empaquetador);
-            //Inicializamos el hilo
+
             
         }
         
@@ -65,10 +65,11 @@ public class InicializacionServer
         {
             //Creamo el horno
             Horno horno = new Horno(i,listaEmpaquetadores.get(i-1));
-            //Lo añadimos a la lista para posteriormente referenciarlo en los reposteros y al RMI
-            listaHornos.add(horno);
             //Inicializamos el hilo
             horno.start();
+            //Lo añadimos a la lista para posteriormente referenciarlo en los reposteros y al RMI
+            listaHornos.add(horno);
+            
         }
         
         
@@ -77,10 +78,11 @@ public class InicializacionServer
         {
             //Creamos al repostero
             Repostero repostero = new Repostero(i, listaHornos,cafeteria);
-            //Lo añadimos a la lista para referenciarlo al RMI
-            listaReposteros.add(repostero);
             //Inicializamos el hilo
             repostero.start();
+            //Lo añadimos a la lista para referenciarlo al RMI
+            listaReposteros.add(repostero);
+            
         }
         
         

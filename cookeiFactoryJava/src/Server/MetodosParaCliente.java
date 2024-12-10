@@ -47,4 +47,8 @@ public class MetodosParaCliente extends UnicastRemoteObject implements InterfazI
     public List<Horno> getListaHornos(){return listaHornos;}
     public List<Empaquetador> getListaEmpaquetadores(){return listaEmpaquetadores;}  
     public Almacen getAlmacen(){return almacen;}
+    public void setParadaManualDesdeCliente(boolean _paradaManual, int indexRepostero)
+    {
+        getListaReposteros().get(indexRepostero).setParadaManual(_paradaManual);
+    }
 }

@@ -47,7 +47,6 @@ public class Repostero extends Thread implements Serializable
     
         //Usamos estos atributos para generar la pausa del hilo
     private boolean paradaManual = false;       //Por defecto la parada manual se pondra a true despues de crear el hilo
-    private ReentrantLock lock = new ReentrantLock();
     private ReentrantLock lockHorno = new ReentrantLock();
     
     
@@ -77,12 +76,11 @@ public class Repostero extends Thread implements Serializable
     public int getTotalGalletasDesperdiciadas(){return totalGalletasDesperdiciadas;}
     public int getIdentificador(){return identificador;}
     public boolean getParadaManual(){return paradaManual;}
-    public ReentrantLock getLock(){return lock;}
     public String getAccion(){return accion;}
     
 
     //Setters
-    public void setParadaManual(boolean _paradaManual){this.paradaManual = _paradaManual;}
+    public void setParadaManual(boolean _paradaManual){this.paradaManual = _paradaManual;System.out.println("Hola caracola"+this.paradaManual);}
     public void setAccion(String _accion){this.accion = _accion;}
     
     
@@ -214,24 +212,17 @@ public class Repostero extends Thread implements Serializable
     {
         try
         {
-            lock.lock();
-            if (paradaManual)
+            while(paradaManual)
             {
+                //Espera activa
                 accion = "BLOQUEADO";
-                lock.wait();
+                Thread.sleep(1000);
             }
         }
         catch(InterruptedException error)
         {
-            System.out.println("Ha ocurrido un error mientas se paraba manualmente el Repostero["+identificador+"] -->" + error);
+            System.out.println("Se ha producido un error mientras se hacia la espera activa para reanudar el repostero["+identificador+"] --> " + error);
         }
-        finally
-        {
-            //Nos aseguramos de que siempre de desbloque el candado aunque ocurra un error
-            lock.unlock();
-        }
-            
-        //Si no se mete en el condicional entonces no se ha solicitado la parada manual
     }
     
 }
