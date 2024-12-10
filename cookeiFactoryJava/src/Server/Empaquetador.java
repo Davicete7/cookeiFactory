@@ -48,6 +48,7 @@ public class Empaquetador extends Thread implements Serializable
     //Getters
     public int getIdentificador(){return identificador;}
     public String getAccion(){return accion;}
+    public int getTandasGalletasRecogidas(){return tandasGalletasRecogidas;}
     //Setters
     //To String (Solo si es necesario)
     public String toStringIdentificador()
@@ -67,19 +68,28 @@ public class Empaquetador extends Thread implements Serializable
         {
             try
             {
+                //Antes de empezar a empaquetar no habra recogido ninguna tanda aun
+                tandasGalletasRecogidas = 0;
                 accion = "EMPAQUETANDO";
                 //Realizamos las tandas de 5 en 5 para que las empaquetemos siempre de 100 en 100
-                for(tandasGalletasRecogidas = 0; tandasGalletasRecogidas < 5; tandasGalletasRecogidas++)
+                for(tandasGalletasRecogidas = 1; tandasGalletasRecogidas < 6; tandasGalletasRecogidas++)
                 {
                     //Tanda de recogida galletas
                     galletasRecogidas += horno.sacarHorneadoGalletas(cantidadRecogidaGalletas);
                     Thread.sleep(500 + aleatorio.nextInt(1000));
                 }
                 
+                
                 //Empaquetamos las galletas para llevarlas al almacen
                 accion = "TRANSPORTANDO";
+                //Cuando termina de transportar, las tandas recogidas vuelve a ser 0
+                tandasGalletasRecogidas = 0;
                 Thread.sleep(2000 + aleatorio.nextInt(4000));
                 almacen.añadirGalletas(cantidadEmpaquetadoGalletas);
+                
+                
+               
+                
                 
                 
                 

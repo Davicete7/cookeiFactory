@@ -115,6 +115,26 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         accionEmpaquetador2 = new javax.swing.JTextField();
         accionEmpaquetador3 = new javax.swing.JTextField();
         accionEmpaquetador1 = new javax.swing.JTextField();
+        paquete1_1 = new javax.swing.JTextField();
+        paquete1_2 = new javax.swing.JTextField();
+        paquete1_3 = new javax.swing.JTextField();
+        paquete1_4 = new javax.swing.JTextField();
+        paquete1_5 = new javax.swing.JTextField();
+        paquete2_1 = new javax.swing.JTextField();
+        paquete2_2 = new javax.swing.JTextField();
+        paquete2_3 = new javax.swing.JTextField();
+        paquete2_4 = new javax.swing.JTextField();
+        paquete2_5 = new javax.swing.JTextField();
+        paquete3_1 = new javax.swing.JTextField();
+        paquete3_2 = new javax.swing.JTextField();
+        paquete3_3 = new javax.swing.JTextField();
+        paquete3_4 = new javax.swing.JTextField();
+        paquete3_5 = new javax.swing.JTextField();
+        labelEstadoHornos = new javax.swing.JLabel();
+        estadoHorno3 = new javax.swing.JTextField();
+        estadoHorno1 = new javax.swing.JTextField();
+        estadoHorno2 = new javax.swing.JTextField();
+        barraProgresoHorno1 = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -342,7 +362,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                     .addGroup(menuDerechaLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(botonComer, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         menuDerechaLayout.setVerticalGroup(
             menuDerechaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -453,12 +473,12 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         labelNumeroDeGalletasHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         labelNumeroDeGalletasHornos.setForeground(new java.awt.Color(0, 0, 0));
         labelNumeroDeGalletasHornos.setText("Numero Galletas");
-        backgroung.add(labelNumeroDeGalletasHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 170, 40));
+        backgroung.add(labelNumeroDeGalletasHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 170, 40));
 
         labelHorneandoHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         labelHorneandoHornos.setForeground(new java.awt.Color(0, 0, 0));
         labelHorneandoHornos.setText("Horneando");
-        backgroung.add(labelHorneandoHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 170, 40));
+        backgroung.add(labelHorneandoHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 170, 40));
 
         numeroDeGalletasHorno1.setEditable(false);
         numeroDeGalletasHorno1.setBackground(new java.awt.Color(238, 212, 130));
@@ -470,7 +490,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 numeroDeGalletasHorno1ActionPerformed(evt);
             }
         });
-        backgroung.add(numeroDeGalletasHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 120, -1));
+        backgroung.add(numeroDeGalletasHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 120, -1));
 
         numeroDeGalletasHorno2.setEditable(false);
         numeroDeGalletasHorno2.setBackground(new java.awt.Color(238, 212, 130));
@@ -482,7 +502,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 numeroDeGalletasHorno2ActionPerformed(evt);
             }
         });
-        backgroung.add(numeroDeGalletasHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 120, -1));
+        backgroung.add(numeroDeGalletasHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 120, -1));
 
         numeroDeGalletasHorno3.setEditable(false);
         numeroDeGalletasHorno3.setBackground(new java.awt.Color(238, 212, 130));
@@ -494,8 +514,8 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 numeroDeGalletasHorno3ActionPerformed(evt);
             }
         });
-        backgroung.add(numeroDeGalletasHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 120, -1));
-        backgroung.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 540, 10));
+        backgroung.add(numeroDeGalletasHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 120, -1));
+        backgroung.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 540, 10));
 
         accionEmpaquetador2.setEditable(false);
         accionEmpaquetador2.setBackground(new java.awt.Color(238, 212, 130));
@@ -507,7 +527,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 accionEmpaquetador2ActionPerformed(evt);
             }
         });
-        backgroung.add(accionEmpaquetador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 550, 170, -1));
+        backgroung.add(accionEmpaquetador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 550, 190, -1));
 
         accionEmpaquetador3.setEditable(false);
         accionEmpaquetador3.setBackground(new java.awt.Color(238, 212, 130));
@@ -519,7 +539,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 accionEmpaquetador3ActionPerformed(evt);
             }
         });
-        backgroung.add(accionEmpaquetador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 550, 170, -1));
+        backgroung.add(accionEmpaquetador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 550, 190, -1));
 
         accionEmpaquetador1.setEditable(false);
         accionEmpaquetador1.setBackground(new java.awt.Color(238, 212, 130));
@@ -531,7 +551,229 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                 accionEmpaquetador1ActionPerformed(evt);
             }
         });
-        backgroung.add(accionEmpaquetador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 550, 170, -1));
+        backgroung.add(accionEmpaquetador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, 190, -1));
+
+        paquete1_1.setEditable(false);
+        paquete1_1.setBackground(new java.awt.Color(255, 255, 255));
+        paquete1_1.setForeground(new java.awt.Color(255, 255, 255));
+        paquete1_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete1_1.setFocusable(false);
+        paquete1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete1_1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete1_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, 30, -1));
+
+        paquete1_2.setEditable(false);
+        paquete1_2.setBackground(new java.awt.Color(255, 255, 255));
+        paquete1_2.setForeground(new java.awt.Color(255, 255, 255));
+        paquete1_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete1_2.setFocusable(false);
+        paquete1_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete1_2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, 30, -1));
+
+        paquete1_3.setEditable(false);
+        paquete1_3.setBackground(new java.awt.Color(255, 255, 255));
+        paquete1_3.setForeground(new java.awt.Color(255, 255, 255));
+        paquete1_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete1_3.setFocusable(false);
+        paquete1_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete1_3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 590, 30, -1));
+
+        paquete1_4.setEditable(false);
+        paquete1_4.setBackground(new java.awt.Color(255, 255, 255));
+        paquete1_4.setForeground(new java.awt.Color(255, 255, 255));
+        paquete1_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete1_4.setFocusable(false);
+        paquete1_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete1_4ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, 30, -1));
+
+        paquete1_5.setEditable(false);
+        paquete1_5.setBackground(new java.awt.Color(255, 255, 255));
+        paquete1_5.setForeground(new java.awt.Color(255, 255, 255));
+        paquete1_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete1_5.setFocusable(false);
+        paquete1_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete1_5ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete1_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 30, -1));
+
+        paquete2_1.setEditable(false);
+        paquete2_1.setBackground(new java.awt.Color(255, 255, 255));
+        paquete2_1.setForeground(new java.awt.Color(255, 255, 255));
+        paquete2_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete2_1.setFocusable(false);
+        paquete2_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete2_1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, 30, -1));
+
+        paquete2_2.setEditable(false);
+        paquete2_2.setBackground(new java.awt.Color(255, 255, 255));
+        paquete2_2.setForeground(new java.awt.Color(255, 255, 255));
+        paquete2_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete2_2.setFocusable(false);
+        paquete2_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete2_2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete2_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 590, 30, -1));
+
+        paquete2_3.setEditable(false);
+        paquete2_3.setBackground(new java.awt.Color(255, 255, 255));
+        paquete2_3.setForeground(new java.awt.Color(255, 255, 255));
+        paquete2_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete2_3.setFocusable(false);
+        paquete2_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete2_3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 590, 30, -1));
+
+        paquete2_4.setEditable(false);
+        paquete2_4.setBackground(new java.awt.Color(255, 255, 255));
+        paquete2_4.setForeground(new java.awt.Color(255, 255, 255));
+        paquete2_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete2_4.setFocusable(false);
+        paquete2_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete2_4ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete2_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 590, 30, -1));
+
+        paquete2_5.setEditable(false);
+        paquete2_5.setBackground(new java.awt.Color(255, 255, 255));
+        paquete2_5.setForeground(new java.awt.Color(255, 255, 255));
+        paquete2_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete2_5.setFocusable(false);
+        paquete2_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete2_5ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 590, 30, -1));
+
+        paquete3_1.setEditable(false);
+        paquete3_1.setBackground(new java.awt.Color(255, 255, 255));
+        paquete3_1.setForeground(new java.awt.Color(255, 255, 255));
+        paquete3_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete3_1.setFocusable(false);
+        paquete3_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete3_1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete3_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 590, 30, -1));
+
+        paquete3_2.setEditable(false);
+        paquete3_2.setBackground(new java.awt.Color(255, 255, 255));
+        paquete3_2.setForeground(new java.awt.Color(255, 255, 255));
+        paquete3_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete3_2.setFocusable(false);
+        paquete3_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete3_2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete3_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 590, 30, -1));
+
+        paquete3_3.setEditable(false);
+        paquete3_3.setBackground(new java.awt.Color(255, 255, 255));
+        paquete3_3.setForeground(new java.awt.Color(255, 255, 255));
+        paquete3_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete3_3.setFocusable(false);
+        paquete3_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete3_3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete3_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 590, 30, -1));
+
+        paquete3_4.setEditable(false);
+        paquete3_4.setBackground(new java.awt.Color(255, 255, 255));
+        paquete3_4.setForeground(new java.awt.Color(255, 255, 255));
+        paquete3_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete3_4.setFocusable(false);
+        paquete3_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete3_4ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete3_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 590, 30, -1));
+
+        paquete3_5.setEditable(false);
+        paquete3_5.setBackground(new java.awt.Color(255, 255, 255));
+        paquete3_5.setForeground(new java.awt.Color(255, 255, 255));
+        paquete3_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        paquete3_5.setFocusable(false);
+        paquete3_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paquete3_5ActionPerformed(evt);
+            }
+        });
+        backgroung.add(paquete3_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 590, 30, -1));
+
+        labelEstadoHornos.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        labelEstadoHornos.setForeground(new java.awt.Color(0, 0, 0));
+        labelEstadoHornos.setText("Estado hornos");
+        backgroung.add(labelEstadoHornos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 170, 40));
+
+        estadoHorno3.setEditable(false);
+        estadoHorno3.setBackground(new java.awt.Color(238, 212, 130));
+        estadoHorno3.setForeground(new java.awt.Color(0, 0, 0));
+        estadoHorno3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        estadoHorno3.setFocusable(false);
+        estadoHorno3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estadoHorno3ActionPerformed(evt);
+            }
+        });
+        backgroung.add(estadoHorno3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 120, -1));
+
+        estadoHorno1.setEditable(false);
+        estadoHorno1.setBackground(new java.awt.Color(238, 212, 130));
+        estadoHorno1.setForeground(new java.awt.Color(0, 0, 0));
+        estadoHorno1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        estadoHorno1.setFocusable(false);
+        estadoHorno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estadoHorno1ActionPerformed(evt);
+            }
+        });
+        backgroung.add(estadoHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 120, -1));
+
+        estadoHorno2.setEditable(false);
+        estadoHorno2.setBackground(new java.awt.Color(238, 212, 130));
+        estadoHorno2.setForeground(new java.awt.Color(0, 0, 0));
+        estadoHorno2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        estadoHorno2.setFocusable(false);
+        estadoHorno2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estadoHorno2ActionPerformed(evt);
+            }
+        });
+        backgroung.add(estadoHorno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 120, -1));
+        backgroung.add(barraProgresoHorno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 120, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -686,6 +928,78 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
         botonComer.setBackground(new java.awt.Color(64, 166, 38));
     }//GEN-LAST:event_botonComerMousePressed
 
+    private void paquete1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete1_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete1_1ActionPerformed
+
+    private void paquete1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete1_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete1_2ActionPerformed
+
+    private void paquete1_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete1_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete1_3ActionPerformed
+
+    private void paquete1_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete1_4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete1_4ActionPerformed
+
+    private void paquete1_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete1_5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete1_5ActionPerformed
+
+    private void paquete2_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete2_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete2_1ActionPerformed
+
+    private void paquete2_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete2_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete2_2ActionPerformed
+
+    private void paquete2_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete2_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete2_3ActionPerformed
+
+    private void paquete2_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete2_4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete2_4ActionPerformed
+
+    private void paquete2_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete2_5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete2_5ActionPerformed
+
+    private void paquete3_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete3_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete3_1ActionPerformed
+
+    private void paquete3_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete3_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete3_2ActionPerformed
+
+    private void paquete3_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete3_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete3_3ActionPerformed
+
+    private void paquete3_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete3_4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete3_4ActionPerformed
+
+    private void paquete3_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paquete3_5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paquete3_5ActionPerformed
+
+    private void estadoHorno3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadoHorno3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_estadoHorno3ActionPerformed
+
+    private void estadoHorno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadoHorno1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_estadoHorno1ActionPerformed
+
+    private void estadoHorno2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estadoHorno2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_estadoHorno2ActionPerformed
+
     //METODOS CREADOS A MANO
     public JTextField getTextosReposteros(int identificadorTexto)
     {
@@ -799,6 +1113,130 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     }
     
     
+    public void checkColorPaquetes(Empaquetador empaquetador)
+    {
+        if(empaquetador.getIdentificador() == 1)
+        {
+            //Almacenamos en una variable temporal las tandas que lleva
+            int tandasRecogidas = empaquetador.getTandasGalletasRecogidas();
+            if(tandasRecogidas == 0)
+            {
+                paquete1_1.setBackground(Color.white);
+                paquete1_2.setBackground(Color.white);
+                paquete1_3.setBackground(Color.white);
+                paquete1_4.setBackground(Color.white);
+                paquete1_5.setBackground(Color.white);
+            }
+            else if( tandasRecogidas >= 1)
+            {
+                paquete1_1.setBackground(Color.black);
+                if(tandasRecogidas >= 2)
+                {
+                    paquete1_2.setBackground(Color.black);
+                    if(tandasRecogidas >=3)
+                    {
+                        paquete1_3.setBackground(Color.black);
+                        if(tandasRecogidas >=4)
+                        {
+                            paquete1_4.setBackground(Color.black);
+                            if(tandasRecogidas >=5)
+                            {
+                                paquete1_5.setBackground(Color.black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else if(empaquetador.getIdentificador() == 2)
+        {
+            //Almacenamos en una variable temporal las tandas que lleva
+            int tandasRecogidas = empaquetador.getTandasGalletasRecogidas();
+            if(tandasRecogidas == 0)
+            {
+                paquete2_1.setBackground(Color.white);
+                paquete2_2.setBackground(Color.white);
+                paquete2_3.setBackground(Color.white);
+                paquete2_4.setBackground(Color.white);
+                paquete2_5.setBackground(Color.white);
+            }
+            else if( tandasRecogidas >= 1)
+            {
+                paquete2_1.setBackground(Color.black);
+                if(tandasRecogidas >= 2)
+                {
+                    paquete2_2.setBackground(Color.black);
+                    if(tandasRecogidas >=3)
+                    {
+                        paquete2_3.setBackground(Color.black);
+                        if(tandasRecogidas >=4)
+                        {
+                            paquete2_4.setBackground(Color.black);
+                            if(tandasRecogidas >=5)
+                            {
+                                paquete2_5.setBackground(Color.black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else if(empaquetador.getIdentificador() == 3)
+        {
+            //Almacenamos en una variable temporal las tandas que lleva
+            int tandasRecogidas = empaquetador.getTandasGalletasRecogidas();
+            if(tandasRecogidas == 0)
+            {
+                paquete3_1.setBackground(Color.white);
+                paquete3_2.setBackground(Color.white);
+                paquete3_3.setBackground(Color.white);
+                paquete3_4.setBackground(Color.white);
+                paquete3_5.setBackground(Color.white);
+            }
+            else if( tandasRecogidas >= 1)
+            {
+                paquete3_1.setBackground(Color.black);
+                if(tandasRecogidas >= 2)
+                {
+                    paquete3_2.setBackground(Color.black);
+                    if(tandasRecogidas >=3)
+                    {
+                        paquete3_3.setBackground(Color.black);
+                        if(tandasRecogidas >=4)
+                        {
+                            paquete3_4.setBackground(Color.black);
+                            if(tandasRecogidas >=5)
+                            {
+                                paquete3_5.setBackground(Color.black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public void ponerColorTextoHornos(int identificador, String accion)
+    {
+        if (accion.equals("LLENANDOSE")) {getTextoAccionHornos(identificador).setForeground(Color.black);} 
+        else if (accion.equals("HORNEANDO")) {getTextoAccionHornos(identificador).setForeground(Color.magenta);} 
+        else if (accion.equals("VACIANDOSE")) {getTextoAccionHornos(identificador).setForeground(Color.white);} 
+    }
+    public JTextField getTextoAccionHornos(int identificadorTexto)
+    {
+            switch (identificadorTexto) 
+            {
+                case 0:
+                    return estadoHorno1;
+                case 1:
+                    return estadoHorno2;
+                case 2:
+                    return estadoHorno3;
+            }
+           //Si no entra en ningun case, no devolvemos anda porque no han seleccionado el indice bien
+            return null;
+    }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField accionEmpaquetador1;
@@ -806,10 +1244,14 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JTextField accionEmpaquetador3;
     private javax.swing.JLabel almacenJlabel;
     private javax.swing.JPanel backgroung;
+    private javax.swing.JProgressBar barraProgresoHorno1;
     private javax.swing.JButton botonComer;
     private javax.swing.JLabel empaquetador1;
     private javax.swing.JLabel empaquetador2;
     private javax.swing.JLabel empaquetador3;
+    private javax.swing.JTextField estadoHorno1;
+    private javax.swing.JTextField estadoHorno2;
+    private javax.swing.JTextField estadoHorno3;
     private javax.swing.JPanel header;
     private javax.swing.JLabel horno1;
     private javax.swing.JLabel horno2;
@@ -820,6 +1262,7 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JLabel imagenCartelCafeteria;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel labelCerrar;
+    private javax.swing.JLabel labelEstadoHornos;
     private javax.swing.JLabel labelHorneandoHornos;
     private javax.swing.JLabel labelNumeroDeGalletasHornos;
     private javax.swing.JLabel lableCafeteria;
@@ -829,6 +1272,21 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
     private javax.swing.JTextField numeroDeGalletasHorno2;
     private javax.swing.JTextField numeroDeGalletasHorno3;
     private javax.swing.JLabel panelSCM;
+    private javax.swing.JTextField paquete1_1;
+    private javax.swing.JTextField paquete1_2;
+    private javax.swing.JTextField paquete1_3;
+    private javax.swing.JTextField paquete1_4;
+    private javax.swing.JTextField paquete1_5;
+    private javax.swing.JTextField paquete2_1;
+    private javax.swing.JTextField paquete2_2;
+    private javax.swing.JTextField paquete2_3;
+    private javax.swing.JTextField paquete2_4;
+    private javax.swing.JTextField paquete2_5;
+    private javax.swing.JTextField paquete3_1;
+    private javax.swing.JTextField paquete3_2;
+    private javax.swing.JTextField paquete3_3;
+    private javax.swing.JTextField paquete3_4;
+    private javax.swing.JTextField paquete3_5;
     private javax.swing.JLabel respostero1;
     private javax.swing.JLabel respostero2;
     private javax.swing.JLabel respostero3;
@@ -877,6 +1335,13 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                     //Actualizamos las galletas que hay en cada horno
                     int numeroGalletas = listaHornos.get(identificador).getCantidadGalletas();
                     getTextoGalletasEnHorno(identificador).setText(String.valueOf(numeroGalletas));
+                    
+                    //Actualizamos el estado de los hornos
+                    String accion = listaHornos.get(identificador).getAccion();
+                    //Primero cambio el color del texto
+                    ponerColorTextoHornos(identificador, accion);
+                    //Luego cambio el texto
+                    getTextoAccionHornos(identificador).setText(accion);
                 }
                 
                 
@@ -891,6 +1356,10 @@ public class PanelSCM extends javax.swing.JFrame implements Runnable{
                     
                     //Cambiamos el color del texto
                     ponerColorTextoAccionEmpaquetadores(identificador, accion);
+                    
+                    
+                    //Checkeo el color de los paquete
+                    checkColorPaquetes(listaEmpaquetadores.get(identificador));
                 }
                 
                 

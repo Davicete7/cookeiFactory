@@ -29,6 +29,7 @@ public class Horno extends Thread implements Serializable
     private int totalGalletasHorneadas = 0;     //Por defecto cuando se cree el horno no llevara ninguna galleta horneada
     private boolean estaHorneando = false;      //Por defecto cuando se cree el horno no estara en proceso de horneado hasta que no se llene
     private boolean estaEmpaquetando = false;
+    private String accion;
     
     
     
@@ -49,10 +50,12 @@ public class Horno extends Thread implements Serializable
     public int getTotalGalletasHorneadas(){return totalGalletasHorneadas;}
     public boolean getEstaHorneando(){return estaHorneando;}
     public boolean getEstaEmpaquetando(){return estaEmpaquetando;}
+    public String getAccion(){return accion;}
     
     
     //Setters
     public void setCantidadGalletas(int _cantidadGalletas){this.cantidadGalletas = _cantidadGalletas;}
+    public void setAccion(String _accion){this.accion = _accion;}
 
     
     //To String (Solo si es necesario)
@@ -91,9 +94,12 @@ public class Horno extends Thread implements Serializable
             //Un horno nunca va a parar de trabajar
             while(true)
             {
+                //Si esta aqui significa que esta en estado de llenado
+                accion = "LLENANDOSE";
                 if(cantidadGalletas == capacidadMaxima && !estaHorneando)
                 {
                     //Comienza el horneado
+                    accion = "HORNEANDO";
                     estaHorneando = true;
                     Thread.sleep(8000);             //Tardan en hornear la tanda 8000 milisegundos (8 segundos)
                     
@@ -103,7 +109,8 @@ public class Horno extends Thread implements Serializable
                     //Termina el horneado
                     estaHorneando = false;
                     
-                    //Empieza empaquetado
+                    //Empieza empaquetado, es decir, se empieza a vaciar
+                    accion = "VACIANDOSE";
                     estaEmpaquetando = true;
                     
                     //Avisamos al empaquetador para que vacie el horno
