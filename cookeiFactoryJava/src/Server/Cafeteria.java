@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.Semaphore;
 import java.io.Serializable;
+import Logger.Logger;
 
 
 
@@ -27,6 +28,9 @@ public class Cafeteria implements Serializable
     private Semaphore semaforoClienteAtendido = new Semaphore(1, true);     //Generamos que se atienda solo y solo a un Repostero y que se les atienda en funcion del orden de llegada
     private String reposteroAtendido;
     private String colaReposterosCafeteria;
+    
+        //Para lo logs
+    private Logger log = Logger.getInstance();
     
     
     
@@ -65,6 +69,7 @@ public class Cafeteria implements Serializable
         
         //Marcamos como que el repostero acaba de entrar en la cafeteria
         repostero.setAccion("CAFETERÍA");
+        log.log("Repostero["+repostero.getIdentificador()+"] -->"+repostero.getAccion());
 
         
         //Primero nos aseguramos de que la cola sea escrita correctamente

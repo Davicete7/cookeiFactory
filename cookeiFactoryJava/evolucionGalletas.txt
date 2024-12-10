@@ -1,0 +1,1317 @@
+=== Inicio de Logs: 2024-12-10 17:58:57 ===
+[2024-12-10 17:58:57] Repostero[3] -->PRODUCIENDO
+[2024-12-10 17:58:57] Horno[1] -->LLENANDOSE
+[2024-12-10 17:58:57] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:58:57] Horno[2] -->LLENANDOSE
+[2024-12-10 17:58:57] Horno[3] -->LLENANDOSE
+[2024-12-10 17:58:57] Repostero[4] -->PRODUCIENDO
+[2024-12-10 17:58:57] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:58:57] Repostero[2] -->PRODUCIENDO
+[2024-12-10 17:58:59] Repostero[1] =========> Ha producido 37 galletas
+[2024-12-10 17:58:59] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:58:59] Repostero[1] =========> Ha depositado 37 galletas en el Horno[1]
+[2024-12-10 17:58:59] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:00] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 17:59:00] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:00] Repostero[5] =========> Ha depositado 41 galletas en el Horno[1]
+[2024-12-10 17:59:00] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:00] Repostero[4] =========> Ha producido 42 galletas
+[2024-12-10 17:59:00] Repostero[4] -->DEPOSITANDO
+[2024-12-10 17:59:00] Repostero[4] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 17:59:00] Repostero[4] -->PRODUCIENDO
+[2024-12-10 17:59:00] Repostero[3] =========> Ha producido 38 galletas
+[2024-12-10 17:59:00] Repostero[3] -->DEPOSITANDO
+[2024-12-10 17:59:00] Repostero[3] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 17:59:00] Repostero[3] -->PRODUCIENDO
+[2024-12-10 17:59:00] Repostero[2] =========> Ha producido 38 galletas
+[2024-12-10 17:59:00] Repostero[2] -->DEPOSITANDO
+[2024-12-10 17:59:00] Repostero[2] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 17:59:00] Repostero[2] -->PRODUCIENDO
+[2024-12-10 17:59:02] Repostero[1] =========> Ha producido 43 galletas
+[2024-12-10 17:59:02] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:02] Repostero[1] =========> Ha depositado 4 galletas en el Horno[1]
+[2024-12-10 17:59:02] Repostero[1] =========> Ha desperdiciado 39 galletas
+[2024-12-10 17:59:02] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:02] Horno[1] -->HORNEANDO
+[2024-12-10 17:59:03] Repostero[5] =========> Ha producido 40 galletas
+[2024-12-10 17:59:03] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:03] Repostero[4] =========> Ha producido 40 galletas
+[2024-12-10 17:59:03] Repostero[4] -->DEPOSITANDO
+[2024-12-10 17:59:03] Repostero[5] =========> Ha depositado 40 galletas en el Horno[2]
+[2024-12-10 17:59:03] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:03] Repostero[4] =========> Ha depositado 40 galletas en el Horno[2]
+[2024-12-10 17:59:03] Repostero[4] -->PRODUCIENDO
+[2024-12-10 17:59:04] Repostero[3] =========> Ha producido 37 galletas
+[2024-12-10 17:59:04] Repostero[3] -->DEPOSITANDO
+[2024-12-10 17:59:04] Repostero[3] =========> Ha depositado 37 galletas en el Horno[2]
+[2024-12-10 17:59:04] Repostero[3] -->PRODUCIENDO
+[2024-12-10 17:59:04] Repostero[2] =========> Ha producido 38 galletas
+[2024-12-10 17:59:04] Repostero[2] -->DEPOSITANDO
+[2024-12-10 17:59:05] Repostero[2] =========> Ha depositado 38 galletas en el Horno[2]
+[2024-12-10 17:59:05] Repostero[2] -->PRODUCIENDO
+[2024-12-10 17:59:05] Repostero[4] =========> Ha producido 38 galletas
+[2024-12-10 17:59:05] Repostero[4] -->DEPOSITANDO
+[2024-12-10 17:59:05] Repostero[4] =========> Ha depositado 38 galletas en el Horno[2]
+[2024-12-10 17:59:05] Repostero[4] -->PRODUCIENDO
+[2024-12-10 17:59:06] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 17:59:06] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:06] Repostero[5] =========> Ha depositado 7 galletas en el Horno[2]
+[2024-12-10 17:59:06] Repostero[5] =========> Ha desperdiciado 36 galletas
+[2024-12-10 17:59:06] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:06] Horno[2] -->HORNEANDO
+[2024-12-10 17:59:06] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 17:59:06] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:06] Repostero[1] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 17:59:06] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:06] Repostero[3] =========> Ha producido 38 galletas
+[2024-12-10 17:59:06] Repostero[3] -->DEPOSITANDO
+[2024-12-10 17:59:06] Repostero[3] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 17:59:06] Repostero[3] -->PRODUCIENDO
+[2024-12-10 17:59:07] Repostero[2] =========> Ha producido 45 galletas
+[2024-12-10 17:59:07] Repostero[2] -->DEPOSITANDO
+[2024-12-10 17:59:07] Repostero[2] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 17:59:07] Repostero[2] -->PRODUCIENDO
+[2024-12-10 17:59:08] Repostero[4] =========> Ha producido 41 galletas
+[2024-12-10 17:59:08] Repostero[4] -->DEPOSITANDO
+[2024-12-10 17:59:08] Repostero[4] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 17:59:08] Repostero[4] -->PRODUCIENDO
+[2024-12-10 17:59:08] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 17:59:08] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:08] Repostero[5] =========> Ha depositado 32 galletas en el Horno[3]
+[2024-12-10 17:59:08] Repostero[5] =========> Ha desperdiciado 11 galletas
+[2024-12-10 17:59:08] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:09] Horno[3] -->HORNEANDO
+[2024-12-10 17:59:09] Repostero[3] =========> Ha producido 39 galletas
+[2024-12-10 17:59:09] Repostero[3] -->DEPOSITANDO
+[2024-12-10 17:59:10] Repostero[1] =========> Ha producido 43 galletas
+[2024-12-10 17:59:10] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:10] Repostero[4] =========> Ha producido 39 galletas
+[2024-12-10 17:59:10] Repostero[4] -->DEPOSITANDO
+[2024-12-10 17:59:10] Horno[1] -->VACIANDOSE
+[2024-12-10 17:59:10] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 17:59:10] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:11] Repostero[2] =========> Ha producido 42 galletas
+[2024-12-10 17:59:11] Repostero[2] -->DEPOSITANDO
+[2024-12-10 17:59:11] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:12] Repostero[5] =========> Ha producido 42 galletas
+[2024-12-10 17:59:12] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:13] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:13] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:14] Horno[2] -->VACIANDOSE
+[2024-12-10 17:59:14] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 17:59:14] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:14] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:15] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:15] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 17:59:16] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:17] Horno[3] -->VACIANDOSE
+[2024-12-10 17:59:17] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 17:59:17] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:17] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:18] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:18] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:18] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:18] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 17:59:18] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:19] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 17:59:19] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:19] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:20] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:21] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:21] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:21] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 17:59:21] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:22] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:22] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:23] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:23] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:23] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 17:59:23] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:24] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 17:59:24] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:26] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:27] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 17:59:28] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:28] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 17:59:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:29] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:30] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:30] Empaquetador[1] -->ESPERANDO
+[2024-12-10 17:59:30] Horno[1] -->LLENANDOSE
+[2024-12-10 17:59:30] Repostero[4] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 17:59:30] Repostero[4] -->BLOQUEADO
+[2024-12-10 17:59:30] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:30] Repostero[3] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 17:59:30] Repostero[3] -->BLOQUEADO
+[2024-12-10 17:59:30] Repostero[1] =========> Ha depositado 43 galletas en el Horno[1]
+[2024-12-10 17:59:30] Repostero[1] -->CAFETERÍA
+[2024-12-10 17:59:30] Repostero[2] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 17:59:30] Repostero[2] -->BLOQUEADO
+[2024-12-10 17:59:30] Repostero[5] =========> Ha depositado 37 galletas en el Horno[1]
+[2024-12-10 17:59:30] Repostero[5] =========> Ha desperdiciado 5 galletas
+[2024-12-10 17:59:30] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:30] Horno[1] -->HORNEANDO
+[2024-12-10 17:59:31] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:32] Repostero[1] -->DESCANSANDO
+[2024-12-10 17:59:32] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:32] Empaquetador[2] -->ESPERANDO
+[2024-12-10 17:59:32] Horno[2] -->LLENANDOSE
+[2024-12-10 17:59:32] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 17:59:33] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 17:59:34] Repostero[5] =========> Ha producido 40 galletas
+[2024-12-10 17:59:34] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:34] Repostero[5] =========> Ha depositado 40 galletas en el Horno[2]
+[2024-12-10 17:59:34] Repostero[5] -->CAFETERÍA
+[2024-12-10 17:59:36] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:36] Repostero[5] -->DESCANSANDO
+[2024-12-10 17:59:36] Empaquetador[3] -->ESPERANDO
+[2024-12-10 17:59:36] Horno[3] -->LLENANDOSE
+[2024-12-10 17:59:37] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:38] Horno[1] -->VACIANDOSE
+[2024-12-10 17:59:38] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 17:59:38] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:39] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:40] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:40] Repostero[1] =========> Ha producido 38 galletas
+[2024-12-10 17:59:40] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:40] Repostero[1] =========> Ha depositado 38 galletas en el Horno[2]
+[2024-12-10 17:59:40] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:40] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:40] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:41] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:42] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 17:59:43] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 17:59:43] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:44] Repostero[1] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 17:59:44] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:44] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 17:59:44] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:44] Repostero[5] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 17:59:44] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:45] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:45] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 17:59:45] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:46] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:46] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 17:59:46] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:46] Repostero[1] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 17:59:46] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:47] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 17:59:47] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:47] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:47] Repostero[5] =========> Ha depositado 1 galletas en el Horno[2]
+[2024-12-10 17:59:47] Repostero[5] =========> Ha desperdiciado 40 galletas
+[2024-12-10 17:59:47] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:47] Horno[2] -->HORNEANDO
+[2024-12-10 17:59:48] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:49] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 17:59:50] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 17:59:50] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:50] Repostero[5] =========> Ha producido 40 galletas
+[2024-12-10 17:59:50] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:50] Repostero[1] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 17:59:50] Repostero[1] -->PRODUCIENDO
+[2024-12-10 17:59:50] Repostero[5] =========> Ha depositado 40 galletas en el Horno[3]
+[2024-12-10 17:59:50] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:51] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 17:59:53] Repostero[1] =========> Ha producido 45 galletas
+[2024-12-10 17:59:53] Repostero[1] -->DEPOSITANDO
+[2024-12-10 17:59:53] Repostero[1] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 17:59:53] Repostero[1] -->CAFETERÍA
+[2024-12-10 17:59:53] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 17:59:53] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:54] Repostero[5] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 17:59:54] Repostero[5] -->PRODUCIENDO
+[2024-12-10 17:59:54] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 17:59:54] Empaquetador[1] -->ESPERANDO
+[2024-12-10 17:59:54] Horno[1] -->LLENANDOSE
+[2024-12-10 17:59:55] Horno[2] -->VACIANDOSE
+[2024-12-10 17:59:55] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 17:59:55] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:55] Repostero[1] -->DESCANSANDO
+[2024-12-10 17:59:56] Repostero[5] =========> Ha producido 37 galletas
+[2024-12-10 17:59:56] Repostero[5] -->DEPOSITANDO
+[2024-12-10 17:59:56] Repostero[5] =========> Ha depositado 37 galletas en el Horno[1]
+[2024-12-10 17:59:56] Repostero[5] -->CAFETERÍA
+[2024-12-10 17:59:56] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:56] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:57] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:58] Repostero[5] -->DESCANSANDO
+[2024-12-10 17:59:59] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 17:59:59] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:00] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:00:02] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:03] Repostero[1] =========> Ha producido 43 galletas
+[2024-12-10 18:00:03] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:03] Repostero[1] =========> Ha depositado 43 galletas en el Horno[1]
+[2024-12-10 18:00:03] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:06] Repostero[5] =========> Ha producido 40 galletas
+[2024-12-10 18:00:06] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:06] Repostero[5] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:00:06] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:06] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:00:06] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:00:06] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:06] Repostero[1] =========> Ha producido 40 galletas
+[2024-12-10 18:00:06] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:06] Repostero[1] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:00:06] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:07] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:08] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:00:08] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:08] Repostero[5] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:00:08] Repostero[5] =========> Ha desperdiciado 3 galletas
+[2024-12-10 18:00:08] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:08] Horno[1] -->HORNEANDO
+[2024-12-10 18:00:08] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:10] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:10] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:00:10] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:10] Repostero[1] =========> Ha depositado 33 galletas en el Horno[3]
+[2024-12-10 18:00:10] Repostero[1] =========> Ha desperdiciado 6 galletas
+[2024-12-10 18:00:10] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:10] Horno[3] -->HORNEANDO
+[2024-12-10 18:00:11] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:12] Repostero[5] =========> Ha producido 45 galletas
+[2024-12-10 18:00:12] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:12] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:00:12] Repostero[1] =========> Ha producido 37 galletas
+[2024-12-10 18:00:12] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:16] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:00:16] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:00:16] Horno[2] -->LLENANDOSE
+[2024-12-10 18:00:16] Repostero[1] =========> Ha depositado 37 galletas en el Horno[2]
+[2024-12-10 18:00:16] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:16] Repostero[5] =========> Ha depositado 45 galletas en el Horno[2]
+[2024-12-10 18:00:16] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:16] Horno[1] -->VACIANDOSE
+[2024-12-10 18:00:16] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:00:16] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:00:17] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:00:17] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:00:18] Horno[3] -->VACIANDOSE
+[2024-12-10 18:00:18] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:00:18] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:00:19] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:00:19] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:00:19] Repostero[5] =========> Ha producido 42 galletas
+[2024-12-10 18:00:19] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:19] Repostero[1] =========> Ha producido 40 galletas
+[2024-12-10 18:00:19] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:19] Repostero[5] =========> Ha depositado 42 galletas en el Horno[2]
+[2024-12-10 18:00:19] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:00:19] Repostero[1] =========> Ha depositado 40 galletas en el Horno[2]
+[2024-12-10 18:00:19] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:00:20] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:00:20] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:00:21] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:00:21] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:00:21] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:00:22] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:00:23] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:00:23] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:00:26] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:28] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:00:29] Repostero[5] =========> Ha producido 42 galletas
+[2024-12-10 18:00:29] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:29] Repostero[5] =========> Ha depositado 36 galletas en el Horno[2]
+[2024-12-10 18:00:29] Repostero[5] =========> Ha desperdiciado 6 galletas
+[2024-12-10 18:00:29] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:00:29] Horno[2] -->HORNEANDO
+[2024-12-10 18:00:30] Repostero[1] =========> Ha producido 43 galletas
+[2024-12-10 18:00:30] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:00:32] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:00:32] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:00:37] Horno[2] -->VACIANDOSE
+[2024-12-10 18:00:37] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:00:37] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:38] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:38] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:39] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:40] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:00:41] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:03:27] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:27] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:03:27] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:27] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:27] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:03:27] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:03:28] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:28] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:03:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:03:28] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:28] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:03:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:03:29] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:03:29] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:03:29] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:30] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:03:30] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:03:30] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:30] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:03:31] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:03:31] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:32] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:03:32] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:03:32] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:03:36] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:36] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:03:36] Horno[2] -->LLENANDOSE
+[2024-12-10 18:03:37] Repostero[1] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:03:37] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:03:37] Repostero[5] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:03:37] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:03:38] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:38] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:03:38] Horno[3] -->LLENANDOSE
+[2024-12-10 18:03:38] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:03:38] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:03:38] Horno[1] -->LLENANDOSE
+[2024-12-10 18:03:40] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:03:40] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:03:40] Repostero[5] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 18:03:40] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:03:41] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 18:03:41] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:03:41] Repostero[1] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:03:41] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:03:43] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:03:43] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:03:43] Repostero[5] =========> Ha depositado 41 galletas en el Horno[1]
+[2024-12-10 18:03:43] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:03:44] Repostero[1] =========> Ha producido 38 galletas
+[2024-12-10 18:03:44] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:03:44] Repostero[1] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 18:03:44] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:03:45] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:03:47] Repostero[1] =========> Ha producido 42 galletas
+[2024-12-10 18:03:47] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:03:47] Repostero[1] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:03:47] Repostero[1] =========> Ha desperdiciado 3 galletas
+[2024-12-10 18:03:47] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:03:47] Horno[1] -->HORNEANDO
+[2024-12-10 18:03:49] Repostero[1] =========> Ha producido 45 galletas
+[2024-12-10 18:03:49] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:03:49] Repostero[1] =========> Ha depositado 45 galletas en el Horno[2]
+[2024-12-10 18:03:49] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:03:51] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:03:51] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:03:55] Repostero[5] =========> Ha producido 44 galletas
+[2024-12-10 18:03:55] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:03:55] Repostero[5] =========> Ha depositado 44 galletas en el Horno[2]
+[2024-12-10 18:03:55] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:03:55] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:03:55] Horno[1] -->VACIANDOSE
+[2024-12-10 18:03:55] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:03:55] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:57] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:57] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:03:57] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:03:57] Repostero[5] =========> Ha depositado 25 galletas en el Horno[2]
+[2024-12-10 18:03:57] Repostero[5] =========> Ha desperdiciado 18 galletas
+[2024-12-10 18:03:57] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:03:58] Horno[2] -->HORNEANDO
+[2024-12-10 18:03:58] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:59] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:03:59] Repostero[1] =========> Ha producido 42 galletas
+[2024-12-10 18:03:59] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:03:59] Repostero[1] =========> Ha depositado 42 galletas en el Horno[3]
+[2024-12-10 18:03:59] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:00] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:04:00] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:04:00] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:00] Repostero[5] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 18:04:00] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:02] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:04:02] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:02] Repostero[1] =========> Ha depositado 39 galletas en el Horno[3]
+[2024-12-10 18:04:02] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:03] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:03] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:04:03] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:03] Repostero[5] =========> Ha producido 42 galletas
+[2024-12-10 18:04:03] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:03] Repostero[5] =========> Ha depositado 42 galletas en el Horno[3]
+[2024-12-10 18:04:03] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:04] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:05] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:06] Horno[2] -->VACIANDOSE
+[2024-12-10 18:04:06] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:04:06] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:06] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 18:04:06] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:06] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:06] Repostero[1] =========> Ha depositado 39 galletas en el Horno[3]
+[2024-12-10 18:04:06] Repostero[1] =========> Ha desperdiciado 5 galletas
+[2024-12-10 18:04:06] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:06] Repostero[5] =========> Ha producido 44 galletas
+[2024-12-10 18:04:06] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:06] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:07] Horno[3] -->HORNEANDO
+[2024-12-10 18:04:07] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:07] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:08] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:09] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:04:09] Repostero[1] =========> Ha producido 40 galletas
+[2024-12-10 18:04:09] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:09] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:10] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:04:14] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:14] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:04:14] Horno[1] -->LLENANDOSE
+[2024-12-10 18:04:14] Repostero[1] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:04:14] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:04:14] Repostero[5] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:04:14] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:15] Horno[3] -->VACIANDOSE
+[2024-12-10 18:04:15] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:04:15] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:15] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:16] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:16] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:04:16] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:16] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:04:17] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:17] Repostero[5] =========> Ha producido 39 galletas
+[2024-12-10 18:04:17] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:17] Repostero[5] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:04:17] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:04:17] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:18] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:18] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:19] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:04:19] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:19] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:20] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:04:21] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:22] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:04:22] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:24] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:25] Repostero[1] =========> Ha producido 38 galletas
+[2024-12-10 18:04:25] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:25] Repostero[1] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 18:04:25] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:26] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:26] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:04:26] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:26] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:26] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:04:26] Horno[2] -->LLENANDOSE
+[2024-12-10 18:04:26] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:27] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:27] Repostero[5] =========> Ha producido 45 galletas
+[2024-12-10 18:04:27] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:27] Repostero[5] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:04:27] Repostero[5] =========> Ha desperdiciado 6 galletas
+[2024-12-10 18:04:27] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:28] Horno[1] -->HORNEANDO
+[2024-12-10 18:04:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:28] Repostero[1] =========> Ha producido 45 galletas
+[2024-12-10 18:04:28] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:28] Repostero[1] =========> Ha depositado 45 galletas en el Horno[2]
+[2024-12-10 18:04:28] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:29] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:04:30] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:04:31] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:04:31] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:31] Repostero[5] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:04:31] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:32] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:04:32] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:32] Repostero[1] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:04:32] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:34] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:34] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:04:34] Horno[3] -->LLENANDOSE
+[2024-12-10 18:04:34] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:04:34] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:34] Repostero[5] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:04:34] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:35] Repostero[1] =========> Ha producido 43 galletas
+[2024-12-10 18:04:35] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:35] Repostero[1] =========> Ha depositado 32 galletas en el Horno[2]
+[2024-12-10 18:04:35] Repostero[1] =========> Ha desperdiciado 11 galletas
+[2024-12-10 18:04:35] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:04:36] Horno[2] -->HORNEANDO
+[2024-12-10 18:04:36] Horno[1] -->VACIANDOSE
+[2024-12-10 18:04:36] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:04:36] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:37] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:04:37] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:37] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:37] Repostero[5] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 18:04:37] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:04:37] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:04:38] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:39] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:39] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:04:40] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:42] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:04:42] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:42] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:44] Horno[2] -->VACIANDOSE
+[2024-12-10 18:04:44] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:04:44] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:45] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:45] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:04:45] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:04:45] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:45] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 18:04:45] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:45] Repostero[1] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:04:45] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:04:46] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:46] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:04:46] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:04:46] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:46] Repostero[5] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:04:46] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:04:47] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:04:48] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:04:48] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:04:48] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:04:48] Repostero[1] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:04:48] Repostero[1] -->PRODUCIENDO
+=== Inicio de Logs: 2024-12-10 18:29:34 ===
+[2024-12-10 18:29:34] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:29:34] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:29:34] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:29:34] Horno[3] -->LLENANDOSE
+[2024-12-10 18:29:34] Horno[1] -->LLENANDOSE
+[2024-12-10 18:29:34] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:29:34] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:29:34] Horno[2] -->LLENANDOSE
+[2024-12-10 18:29:36] Repostero[1] =========> Ha producido 38 galletas
+[2024-12-10 18:29:36] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:29:36] Repostero[1] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 18:29:36] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:29:37] Repostero[3] =========> Ha producido 44 galletas
+[2024-12-10 18:29:37] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:29:37] Repostero[3] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:29:37] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:29:37] Repostero[2] =========> Ha producido 39 galletas
+[2024-12-10 18:29:37] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:29:37] Repostero[2] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:29:37] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:29:38] Repostero[4] =========> Ha producido 45 galletas
+[2024-12-10 18:29:38] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:29:38] Repostero[4] =========> Ha depositado 45 galletas en el Horno[1]
+[2024-12-10 18:29:38] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:29:38] Repostero[5] =========> Ha producido 44 galletas
+[2024-12-10 18:29:38] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:29:38] Repostero[5] =========> Ha depositado 34 galletas en el Horno[1]
+[2024-12-10 18:29:38] Repostero[5] =========> Ha desperdiciado 10 galletas
+[2024-12-10 18:29:38] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:29:38] Horno[1] -->HORNEANDO
+[2024-12-10 18:29:39] Repostero[1] =========> Ha producido 42 galletas
+[2024-12-10 18:29:39] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:29:39] Repostero[1] =========> Ha depositado 42 galletas en el Horno[2]
+[2024-12-10 18:29:39] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:29:40] Repostero[4] =========> Ha producido 37 galletas
+[2024-12-10 18:29:40] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:29:40] Repostero[4] =========> Ha depositado 37 galletas en el Horno[2]
+[2024-12-10 18:29:40] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:29:40] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:29:40] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:29:40] Repostero[5] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:29:40] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:29:41] Repostero[3] =========> Ha producido 39 galletas
+[2024-12-10 18:29:41] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:29:41] Repostero[3] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:29:41] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:29:41] Repostero[2] =========> Ha producido 38 galletas
+[2024-12-10 18:29:41] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:29:41] Repostero[2] =========> Ha depositado 38 galletas en el Horno[2]
+[2024-12-10 18:29:41] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:29:43] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:29:43] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:29:43] Repostero[1] =========> Ha depositado 1 galletas en el Horno[2]
+[2024-12-10 18:29:43] Repostero[1] =========> Ha desperdiciado 40 galletas
+[2024-12-10 18:29:43] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:29:43] Horno[2] -->HORNEANDO
+[2024-12-10 18:29:43] Repostero[4] =========> Ha producido 38 galletas
+[2024-12-10 18:29:43] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:29:44] Repostero[5] =========> Ha producido 45 galletas
+[2024-12-10 18:29:44] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:29:44] Repostero[4] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 18:29:44] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:29:44] Repostero[5] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 18:29:44] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:29:44] Repostero[3] =========> Ha producido 41 galletas
+[2024-12-10 18:29:44] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:29:45] Repostero[3] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:29:45] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:29:45] Repostero[2] =========> Ha producido 45 galletas
+[2024-12-10 18:29:45] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:29:45] Repostero[2] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 18:29:45] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:29:45] Repostero[1] =========> Ha producido 37 galletas
+[2024-12-10 18:29:45] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:29:46] Repostero[1] =========> Ha depositado 31 galletas en el Horno[3]
+[2024-12-10 18:29:46] Repostero[1] =========> Ha desperdiciado 6 galletas
+[2024-12-10 18:29:46] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:29:46] Horno[1] -->VACIANDOSE
+[2024-12-10 18:29:46] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:29:46] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:46] Horno[3] -->HORNEANDO
+[2024-12-10 18:29:46] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:29:46] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:29:47] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:47] Repostero[4] =========> Ha producido 45 galletas
+[2024-12-10 18:29:47] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:29:47] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:48] Repostero[3] =========> Ha producido 40 galletas
+[2024-12-10 18:29:48] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:29:48] Repostero[1] =========> Ha producido 37 galletas
+[2024-12-10 18:29:48] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:29:49] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:49] Repostero[2] =========> Ha producido 44 galletas
+[2024-12-10 18:29:49] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:29:49] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:51] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:29:51] Horno[2] -->VACIANDOSE
+[2024-12-10 18:29:51] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:29:51] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:29:53] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:29:53] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:29:54] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:29:54] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:29:54] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:54] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:29:54] Horno[3] -->VACIANDOSE
+[2024-12-10 18:29:54] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:29:54] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:29:54] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:29:55] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:55] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:29:55] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:29:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:57] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:29:58] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:29:58] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:29:59] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:29:59] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:30:00] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:30:00] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:00] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:30:00] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:01] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:01] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:30:01] Horno[1] -->LLENANDOSE
+[2024-12-10 18:30:01] Repostero[5] =========> Ha depositado 41 galletas en el Horno[1]
+[2024-12-10 18:30:01] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:30:01] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:01] Repostero[3] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:30:01] Repostero[3] -->CAFETERÍA
+[2024-12-10 18:30:01] Repostero[2] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:30:01] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:30:01] Repostero[4] =========> Ha depositado 45 galletas en el Horno[1]
+[2024-12-10 18:30:01] Repostero[4] -->CAFETERÍA
+[2024-12-10 18:30:01] Repostero[1] =========> Ha depositado 30 galletas en el Horno[1]
+[2024-12-10 18:30:01] Repostero[1] =========> Ha desperdiciado 7 galletas
+[2024-12-10 18:30:01] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:30:02] Horno[1] -->HORNEANDO
+[2024-12-10 18:30:02] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:03] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:03] Repostero[3] -->DESCANSANDO
+[2024-12-10 18:30:03] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:03] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:30:03] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:04] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:04] Repostero[2] =========> Ha producido 39 galletas
+[2024-12-10 18:30:04] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:30:04] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:30:04] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:30:04] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:30:05] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:05] Repostero[4] -->DESCANSANDO
+[2024-12-10 18:30:06] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:07] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:07] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:30:08] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:08] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:30:08] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:30:08] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:30:10] Horno[1] -->VACIANDOSE
+[2024-12-10 18:30:10] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:30:10] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:10] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:10] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:30:10] Horno[2] -->LLENANDOSE
+[2024-12-10 18:30:11] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:11] Repostero[2] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:30:11] Repostero[2] -->CAFETERÍA
+[2024-12-10 18:30:11] Repostero[5] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:30:11] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:30:11] Repostero[4] =========> Ha producido 39 galletas
+[2024-12-10 18:30:11] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:30:11] Repostero[3] =========> Ha producido 45 galletas
+[2024-12-10 18:30:11] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:30:11] Repostero[4] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:30:11] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:30:11] Repostero[3] =========> Ha depositado 45 galletas en el Horno[2]
+[2024-12-10 18:30:11] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:30:12] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:30:12] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:13] Repostero[2] -->DESCANSANDO
+[2024-12-10 18:30:13] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:13] Repostero[4] =========> Ha producido 41 galletas
+[2024-12-10 18:30:13] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:30:13] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:14] Repostero[4] =========> Ha depositado 34 galletas en el Horno[2]
+[2024-12-10 18:30:14] Repostero[4] =========> Ha desperdiciado 7 galletas
+[2024-12-10 18:30:14] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:30:14] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:14] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:30:14] Horno[3] -->LLENANDOSE
+[2024-12-10 18:30:14] Horno[2] -->HORNEANDO
+[2024-12-10 18:30:15] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:30:15] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:30:15] Repostero[3] =========> Ha producido 37 galletas
+[2024-12-10 18:30:15] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:30:15] Repostero[3] =========> Ha depositado 37 galletas en el Horno[3]
+[2024-12-10 18:30:15] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:30:15] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:30:15] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:30:16] Repostero[1] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:30:16] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:30:16] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:30:17] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:17] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:30:17] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:17] Repostero[4] =========> Ha producido 43 galletas
+[2024-12-10 18:30:17] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:30:17] Repostero[4] =========> Ha depositado 43 galletas en el Horno[3]
+[2024-12-10 18:30:17] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:30:18] Repostero[3] =========> Ha producido 42 galletas
+[2024-12-10 18:30:18] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:30:18] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:18] Repostero[3] =========> Ha depositado 42 galletas en el Horno[3]
+[2024-12-10 18:30:18] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:30:19] Repostero[2] =========> Ha producido 38 galletas
+[2024-12-10 18:30:19] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:30:19] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:30:19] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:30:19] Repostero[2] =========> Ha depositado 37 galletas en el Horno[3]
+[2024-12-10 18:30:19] Repostero[2] =========> Ha desperdiciado 1 galletas
+[2024-12-10 18:30:19] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:30:19] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:19] Horno[3] -->HORNEANDO
+[2024-12-10 18:30:19] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:30:20] Repostero[4] =========> Ha producido 42 galletas
+[2024-12-10 18:30:20] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:30:20] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:20] Repostero[3] =========> Ha producido 44 galletas
+[2024-12-10 18:30:20] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:30:21] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:22] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:30:22] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:30:22] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:30:22] Horno[2] -->VACIANDOSE
+[2024-12-10 18:30:22] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:30:22] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:23] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:23] Repostero[2] =========> Ha producido 39 galletas
+[2024-12-10 18:30:23] Repostero[2] -->BLOQUEADO
+[2024-12-10 18:30:24] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:25] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:25] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:25] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:30:25] Horno[1] -->LLENANDOSE
+[2024-12-10 18:30:25] Repostero[1] =========> Ha depositado 41 galletas en el Horno[1]
+[2024-12-10 18:30:25] Repostero[1] -->BLOQUEADO
+[2024-12-10 18:30:25] Repostero[3] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:30:25] Repostero[3] -->BLOQUEADO
+[2024-12-10 18:30:25] Repostero[5] =========> Ha depositado 43 galletas en el Horno[1]
+[2024-12-10 18:30:25] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:30:25] Repostero[4] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 18:30:25] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:30:26] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:27] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:30:27] Horno[3] -->VACIANDOSE
+[2024-12-10 18:30:27] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:30:27] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:27] Repostero[5] =========> Ha producido 37 galletas
+[2024-12-10 18:30:27] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:30:27] Repostero[5] =========> Ha depositado 30 galletas en el Horno[1]
+[2024-12-10 18:30:27] Repostero[5] =========> Ha desperdiciado 7 galletas
+[2024-12-10 18:30:27] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:30:28] Horno[1] -->HORNEANDO
+[2024-12-10 18:30:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:29] Repostero[4] =========> Ha producido 37 galletas
+[2024-12-10 18:30:29] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:30:29] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:30] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:30:30] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:30:30] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:31] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:31] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:30:31] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:32] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:32] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:30:32] Repostero[3] -->CAFETERÍA
+[2024-12-10 18:30:32] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:30:33] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:33] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:30:34] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:34] Repostero[3] -->DESCANSANDO
+[2024-12-10 18:30:35] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:35] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:30:36] Horno[1] -->VACIANDOSE
+[2024-12-10 18:30:36] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:30:36] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:36] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:30:36] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:37] Repostero[1] =========> Ha producido 45 galletas
+[2024-12-10 18:30:37] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:30:37] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:30:37] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:30:37] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:37] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:30:37] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:38] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:38] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:38] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:38] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:30:39] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:30:40] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:40] Repostero[3] =========> Ha producido 41 galletas
+[2024-12-10 18:30:40] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:30:41] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:30:42] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:31:54] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:31:54] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:31:54] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:31:54] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:31:54] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:31:54] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:31:54] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:31:54] Horno[3] -->LLENANDOSE
+[2024-12-10 18:31:54] Horno[2] -->LLENANDOSE
+[2024-12-10 18:31:54] Repostero[5] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 18:31:54] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:31:54] Repostero[2] =========> Ha depositado 39 galletas en el Horno[3]
+[2024-12-10 18:31:54] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:31:54] Repostero[1] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 18:31:54] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:31:54] Repostero[3] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:31:54] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:31:54] Repostero[4] =========> Ha depositado 37 galletas en el Horno[2]
+[2024-12-10 18:31:54] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:31:55] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:31:55] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:31:56] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:31:56] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:31:56] Repostero[5] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:31:56] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:31:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:31:57] Repostero[4] =========> Ha producido 40 galletas
+[2024-12-10 18:31:57] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:31:57] Repostero[4] =========> Ha depositado 40 galletas en el Horno[2]
+[2024-12-10 18:31:57] Repostero[4] -->CAFETERÍA
+[2024-12-10 18:31:57] Repostero[2] =========> Ha producido 42 galletas
+[2024-12-10 18:31:57] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:31:57] Repostero[2] =========> Ha depositado 41 galletas en el Horno[2]
+[2024-12-10 18:31:57] Repostero[2] =========> Ha desperdiciado 1 galletas
+[2024-12-10 18:31:57] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:31:57] Repostero[3] =========> Ha producido 39 galletas
+[2024-12-10 18:31:57] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:31:57] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:31:57] Horno[2] -->HORNEANDO
+[2024-12-10 18:31:58] Repostero[3] =========> Ha depositado 39 galletas en el Horno[3]
+[2024-12-10 18:31:58] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:31:58] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:31:58] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:31:58] Repostero[1] =========> Ha depositado 39 galletas en el Horno[3]
+[2024-12-10 18:31:58] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:31:58] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:31:58] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:31:58] Horno[3] -->HORNEANDO
+[2024-12-10 18:32:00] Repostero[2] =========> Ha producido 38 galletas
+[2024-12-10 18:32:00] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:32:00] Repostero[4] -->DESCANSANDO
+[2024-12-10 18:32:01] Repostero[3] =========> Ha producido 42 galletas
+[2024-12-10 18:32:01] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:01] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:32:01] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:03] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:03] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:32:03] Horno[1] -->LLENANDOSE
+[2024-12-10 18:32:03] Repostero[3] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 18:32:03] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:32:03] Repostero[2] =========> Ha depositado 38 galletas en el Horno[1]
+[2024-12-10 18:32:03] Repostero[2] -->CAFETERÍA
+[2024-12-10 18:32:03] Repostero[1] =========> Ha depositado 41 galletas en el Horno[1]
+[2024-12-10 18:32:03] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:03] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:05] Repostero[2] -->DESCANSANDO
+[2024-12-10 18:32:05] Horno[2] -->VACIANDOSE
+[2024-12-10 18:32:05] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:32:05] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:05] Repostero[3] =========> Ha producido 39 galletas
+[2024-12-10 18:32:05] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:05] Repostero[3] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:32:05] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:32:06] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:06] Horno[3] -->VACIANDOSE
+[2024-12-10 18:32:06] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:32:06] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:06] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:32:06] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:06] Repostero[1] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:32:06] Repostero[1] -->CAFETERÍA
+[2024-12-10 18:32:07] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:07] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:07] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:32:07] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:07] Repostero[5] =========> Ha depositado 1 galletas en el Horno[1]
+[2024-12-10 18:32:07] Repostero[5] =========> Ha desperdiciado 37 galletas
+[2024-12-10 18:32:07] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:08] Horno[1] -->HORNEANDO
+[2024-12-10 18:32:08] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:08] Repostero[4] =========> Ha producido 43 galletas
+[2024-12-10 18:32:08] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:08] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:08] Repostero[1] -->DESCANSANDO
+[2024-12-10 18:32:08] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:08] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:32:09] Repostero[3] =========> Ha producido 42 galletas
+[2024-12-10 18:32:09] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:09] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:09] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:10] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:32:10] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:10] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:10] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:32:11] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:32:12] Repostero[2] =========> Ha producido 45 galletas
+[2024-12-10 18:32:12] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:32:13] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:14] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:14] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:32:14] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:14] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:14] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:32:14] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:15] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:15] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:15] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:16] Horno[1] -->VACIANDOSE
+[2024-12-10 18:32:16] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:32:16] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:16] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:16] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:32:16] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:16] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:16] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:17] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:17] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:17] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:18] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:18] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:18] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:32:19] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:32:19] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:20] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:32:22] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:22] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:32:22] Horno[2] -->LLENANDOSE
+[2024-12-10 18:32:22] Repostero[4] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:32:22] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:22] Repostero[1] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:32:22] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:22] Repostero[3] =========> Ha depositado 42 galletas en el Horno[2]
+[2024-12-10 18:32:22] Repostero[3] -->CAFETERÍA
+[2024-12-10 18:32:22] Repostero[2] =========> Ha depositado 45 galletas en el Horno[2]
+[2024-12-10 18:32:22] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:32:22] Repostero[5] =========> Ha depositado 31 galletas en el Horno[2]
+[2024-12-10 18:32:22] Repostero[5] =========> Ha desperdiciado 10 galletas
+[2024-12-10 18:32:22] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:22] Horno[2] -->HORNEANDO
+[2024-12-10 18:32:22] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:22] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:32:22] Horno[3] -->LLENANDOSE
+[2024-12-10 18:32:24] Repostero[3] -->DESCANSANDO
+[2024-12-10 18:32:24] Repostero[4] =========> Ha producido 41 galletas
+[2024-12-10 18:32:24] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:25] Repostero[4] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:32:25] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:25] Repostero[2] =========> Ha producido 45 galletas
+[2024-12-10 18:32:25] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:32:25] Repostero[2] =========> Ha depositado 45 galletas en el Horno[3]
+[2024-12-10 18:32:25] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:32:25] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:25] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:32:25] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:26] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 18:32:26] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:26] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:26] Repostero[1] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:32:26] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:26] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:32:26] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:26] Repostero[5] =========> Ha depositado 38 galletas en el Horno[3]
+[2024-12-10 18:32:26] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:27] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:27] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:32:28] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:28] Repostero[4] =========> Ha producido 37 galletas
+[2024-12-10 18:32:28] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:28] Repostero[4] =========> Ha depositado 32 galletas en el Horno[3]
+[2024-12-10 18:32:28] Repostero[4] =========> Ha desperdiciado 5 galletas
+[2024-12-10 18:32:28] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:28] Horno[3] -->HORNEANDO
+[2024-12-10 18:32:28] Repostero[1] =========> Ha producido 44 galletas
+[2024-12-10 18:32:28] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:28] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:29] Repostero[2] =========> Ha producido 39 galletas
+[2024-12-10 18:32:29] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:32:29] Repostero[5] =========> Ha producido 42 galletas
+[2024-12-10 18:32:29] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:30] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:32:30] Horno[2] -->VACIANDOSE
+[2024-12-10 18:32:30] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:32:30] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:31] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:31] Repostero[3] =========> Ha producido 37 galletas
+[2024-12-10 18:32:31] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:31] Repostero[4] =========> Ha producido 42 galletas
+[2024-12-10 18:32:31] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:32] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:33] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:33] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:33] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:32:33] Horno[1] -->LLENANDOSE
+[2024-12-10 18:32:34] Repostero[3] =========> Ha depositado 37 galletas en el Horno[1]
+[2024-12-10 18:32:34] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:32:34] Repostero[1] =========> Ha depositado 44 galletas en el Horno[1]
+[2024-12-10 18:32:34] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:34] Repostero[5] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 18:32:34] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:32:34] Repostero[4] =========> Ha depositado 42 galletas en el Horno[1]
+[2024-12-10 18:32:34] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:34] Repostero[2] =========> Ha depositado 35 galletas en el Horno[1]
+[2024-12-10 18:32:34] Repostero[2] =========> Ha desperdiciado 4 galletas
+[2024-12-10 18:32:34] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:32:34] Horno[1] -->HORNEANDO
+[2024-12-10 18:32:34] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:35] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:32:36] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:32:36] Repostero[3] =========> Ha producido 42 galletas
+[2024-12-10 18:32:36] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:36] Horno[3] -->VACIANDOSE
+[2024-12-10 18:32:36] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:32:36] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:36] Repostero[4] =========> Ha producido 43 galletas
+[2024-12-10 18:32:36] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:37] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:37] Repostero[2] =========> Ha producido 37 galletas
+[2024-12-10 18:32:37] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:32:37] Repostero[1] =========> Ha producido 39 galletas
+[2024-12-10 18:32:37] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:37] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:39] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:39] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:39] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:40] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:32:41] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:41] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:32:41] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:41] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:42] Horno[1] -->VACIANDOSE
+[2024-12-10 18:32:42] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:32:42] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:42] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:43] Repostero[5] =========> Ha producido 44 galletas
+[2024-12-10 18:32:43] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:43] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:43] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:32:43] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:43] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:43] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:44] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:44] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:45] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:45] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:45] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:45] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:45] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:46] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:32:46] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:32:47] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:32:47] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:32:49] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:49] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:32:49] Horno[2] -->LLENANDOSE
+[2024-12-10 18:32:49] Repostero[3] =========> Ha depositado 42 galletas en el Horno[2]
+[2024-12-10 18:32:49] Repostero[3] -->PRODUCIENDO
+[2024-12-10 18:32:49] Repostero[4] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:32:49] Repostero[4] -->CAFETERÍA
+[2024-12-10 18:32:49] Repostero[2] =========> Ha depositado 37 galletas en el Horno[2]
+[2024-12-10 18:32:49] Repostero[2] -->CAFETERÍA
+[2024-12-10 18:32:49] Repostero[1] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:32:49] Repostero[1] -->PRODUCIENDO
+[2024-12-10 18:32:49] Repostero[5] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:32:49] Repostero[5] =========> Ha desperdiciado 5 galletas
+[2024-12-10 18:32:49] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:32:50] Horno[2] -->HORNEANDO
+[2024-12-10 18:32:51] Repostero[4] -->DESCANSANDO
+[2024-12-10 18:32:51] Repostero[1] =========> Ha producido 41 galletas
+[2024-12-10 18:32:51] Repostero[1] -->DEPOSITANDO
+[2024-12-10 18:32:52] Repostero[3] =========> Ha producido 44 galletas
+[2024-12-10 18:32:52] Repostero[3] -->DEPOSITANDO
+[2024-12-10 18:32:52] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:32:52] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:32:52] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:53] Repostero[5] =========> Ha producido 44 galletas
+[2024-12-10 18:32:53] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:32:53] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:53] Repostero[2] -->DESCANSANDO
+[2024-12-10 18:32:54] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:55] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:32:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:56] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:32:57] Repostero[2] -->PRODUCIENDO
+[2024-12-10 18:32:58] Horno[2] -->VACIANDOSE
+[2024-12-10 18:32:58] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:32:58] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:32:58] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:32:58] Repostero[4] =========> Ha producido 44 galletas
+[2024-12-10 18:32:58] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:32:59] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:00] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:01] Repostero[2] =========> Ha producido 40 galletas
+[2024-12-10 18:33:01] Repostero[2] -->DEPOSITANDO
+[2024-12-10 18:33:02] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:03] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:04] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:33:11] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:11] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:33:11] Horno[3] -->LLENANDOSE
+[2024-12-10 18:33:11] Repostero[2] =========> Ha depositado 40 galletas en el Horno[3]
+[2024-12-10 18:33:11] Repostero[2] -->BLOQUEADO
+[2024-12-10 18:33:11] Repostero[4] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:33:11] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:11] Repostero[5] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:33:11] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:11] Repostero[3] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:33:11] Repostero[3] -->BLOQUEADO
+[2024-12-10 18:33:11] Repostero[1] =========> Ha depositado 28 galletas en el Horno[3]
+[2024-12-10 18:33:11] Repostero[1] =========> Ha desperdiciado 13 galletas
+[2024-12-10 18:33:11] Repostero[1] -->BLOQUEADO
+[2024-12-10 18:33:11] Horno[3] -->HORNEANDO
+[2024-12-10 18:33:12] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:12] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:12] Empaquetador[1] -->ESPERANDO
+[2024-12-10 18:33:12] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:33:12] Horno[1] -->LLENANDOSE
+[2024-12-10 18:33:12] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:13] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:13] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:14] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:14] Repostero[5] =========> Ha producido 45 galletas
+[2024-12-10 18:33:14] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:14] Repostero[5] =========> Ha depositado 45 galletas en el Horno[1]
+[2024-12-10 18:33:14] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:14] Repostero[4] =========> Ha producido 39 galletas
+[2024-12-10 18:33:14] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:14] Repostero[4] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:33:14] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:14] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:15] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:33:18] Repostero[5] =========> Ha producido 40 galletas
+[2024-12-10 18:33:18] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:18] Repostero[5] =========> Ha depositado 40 galletas en el Horno[1]
+[2024-12-10 18:33:18] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:18] Repostero[4] =========> Ha producido 37 galletas
+[2024-12-10 18:33:18] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:18] Repostero[4] =========> Ha depositado 37 galletas en el Horno[1]
+[2024-12-10 18:33:18] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:19] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:19] Empaquetador[2] -->ESPERANDO
+[2024-12-10 18:33:19] Horno[2] -->LLENANDOSE
+[2024-12-10 18:33:19] Horno[3] -->VACIANDOSE
+[2024-12-10 18:33:19] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:33:19] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:20] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:21] Repostero[5] =========> Ha producido 45 galletas
+[2024-12-10 18:33:21] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:21] Repostero[5] =========> Ha depositado 39 galletas en el Horno[1]
+[2024-12-10 18:33:21] Repostero[5] =========> Ha desperdiciado 6 galletas
+[2024-12-10 18:33:21] Repostero[5] -->CAFETERÍA
+[2024-12-10 18:33:21] Repostero[4] =========> Ha producido 44 galletas
+[2024-12-10 18:33:21] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:21] Repostero[4] =========> Ha depositado 44 galletas en el Horno[2]
+[2024-12-10 18:33:21] Repostero[4] -->CAFETERÍA
+[2024-12-10 18:33:21] Horno[1] -->HORNEANDO
+[2024-12-10 18:33:22] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:23] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:23] Repostero[5] -->DESCANSANDO
+[2024-12-10 18:33:24] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:25] Repostero[4] -->DESCANSANDO
+[2024-12-10 18:33:25] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:33:26] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:27] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:27] Empaquetador[3] -->EMPAQUETANDO
+[2024-12-10 18:33:27] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:28] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:29] Horno[1] -->VACIANDOSE
+[2024-12-10 18:33:29] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:33:29] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:29] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:29] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:30] Repostero[5] =========> Ha producido 43 galletas
+[2024-12-10 18:33:30] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:30] Repostero[5] =========> Ha depositado 43 galletas en el Horno[2]
+[2024-12-10 18:33:30] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:30] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:30] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:31] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:32] Empaquetador[3] =========> Ha sacado 20 galletas del Horno[3]
+[2024-12-10 18:33:32] Repostero[5] =========> Ha producido 38 galletas
+[2024-12-10 18:33:32] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:32] Repostero[5] =========> Ha depositado 38 galletas en el Horno[2]
+[2024-12-10 18:33:32] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:32] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:33] Repostero[4] =========> Ha producido 39 galletas
+[2024-12-10 18:33:33] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:33] Repostero[4] =========> Ha depositado 39 galletas en el Horno[2]
+[2024-12-10 18:33:33] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:33] Empaquetador[3] -->TRANSPORTANDO
+[2024-12-10 18:33:34] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:35] Empaquetador[1] -->TRANSPORTANDO
+[2024-12-10 18:33:35] Repostero[4] =========> Ha producido 39 galletas
+[2024-12-10 18:33:35] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:35] Repostero[4] =========> Ha depositado 36 galletas en el Horno[2]
+[2024-12-10 18:33:35] Repostero[4] =========> Ha desperdiciado 3 galletas
+[2024-12-10 18:33:35] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:36] Horno[2] -->HORNEANDO
+[2024-12-10 18:33:36] Repostero[5] =========> Ha producido 41 galletas
+[2024-12-10 18:33:36] Repostero[5] -->DEPOSITANDO
+[2024-12-10 18:33:38] Repostero[4] =========> Ha producido 44 galletas
+[2024-12-10 18:33:38] Repostero[4] -->DEPOSITANDO
+[2024-12-10 18:33:44] Horno[2] -->VACIANDOSE
+[2024-12-10 18:33:44] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:33:44] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:45] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:46] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:47] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:47] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:48] Empaquetador[2] -->TRANSPORTANDO
+[2024-12-10 18:33:51] Empaquetador[3] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:51] Empaquetador[3] -->ESPERANDO
+[2024-12-10 18:33:51] Horno[3] -->LLENANDOSE
+[2024-12-10 18:33:51] Repostero[5] =========> Ha depositado 41 galletas en el Horno[3]
+[2024-12-10 18:33:51] Repostero[5] -->PRODUCIENDO
+[2024-12-10 18:33:51] Repostero[4] =========> Ha depositado 44 galletas en el Horno[3]
+[2024-12-10 18:33:51] Repostero[4] -->PRODUCIENDO
+[2024-12-10 18:33:52] Empaquetador[1] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:52] Empaquetador[1] -->EMPAQUETANDO
+[2024-12-10 18:33:52] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:53] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]
+[2024-12-10 18:33:53] Empaquetador[2] =========> Ha transportado 100 galletas  al almacen
+[2024-12-10 18:33:53] Empaquetador[2] -->EMPAQUETANDO
+[2024-12-10 18:33:53] Empaquetador[2] =========> Ha sacado 20 galletas del Horno[2]
+[2024-12-10 18:33:54] Empaquetador[1] =========> Ha sacado 20 galletas del Horno[1]

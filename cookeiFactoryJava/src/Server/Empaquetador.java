@@ -13,7 +13,7 @@ package Server;
 import java.io.Serializable;
 import java.time.Duration;
 import java.util.Random;
-
+import Logger.Logger;
 
 //CLASE
 public class Empaquetador extends Thread implements Serializable
@@ -33,7 +33,11 @@ public class Empaquetador extends Thread implements Serializable
     
     
         //Con esta semilla generaremos la aleatoriedad
-    Random aleatorio = new Random();
+    private Random aleatorio = new Random();
+    
+    
+        //Para los logs
+    private Logger log = Logger.getInstance();
     
     //Contructor
     public Empaquetador(int _identificador, Almacen _almacen)
@@ -71,26 +75,26 @@ public class Empaquetador extends Thread implements Serializable
                 //Antes de empezar a empaquetar no habra recogido ninguna tanda aun
                 tandasGalletasRecogidas = 0;
                 accion = "EMPAQUETANDO";
+                log.log("Empaquetador["+identificador+"] -->"+accion);
                 //Realizamos las tandas de 5 en 5 para que las empaquetemos siempre de 100 en 100
                 for(tandasGalletasRecogidas = 1; tandasGalletasRecogidas < 6; tandasGalletasRecogidas++)
                 {
                     //Tanda de recogida galletas
                     galletasRecogidas += horno.sacarHorneadoGalletas(cantidadRecogidaGalletas);
+                    log.log("Empaquetador["+identificador+"] =========> Ha sacado "+cantidadRecogidaGalletas+" galletas del Horno["+horno.getIdentificador()+"]");
                     Thread.sleep(500 + aleatorio.nextInt(1000));
                 }
                 
                 
                 //Empaquetamos las galletas para llevarlas al almacen
                 accion = "TRANSPORTANDO";
+                log.log("Empaquetador["+identificador+"] -->"+accion);
                 //Cuando termina de transportar, las tandas recogidas vuelve a ser 0
                 tandasGalletasRecogidas = 0;
                 Thread.sleep(2000 + aleatorio.nextInt(4000));
                 almacen.añadirGalletas(cantidadEmpaquetadoGalletas);
-                
-                
-               
-                
-                
+                log.log("Empaquetador["+identificador+"] =========> Ha transportado "+cantidadEmpaquetadoGalletas+" galletas  al almacen");
+                    
                 
                 
                 //Comprobamos si ha terminado de vaciar el horno
@@ -108,6 +112,7 @@ public class Empaquetador extends Thread implements Serializable
         //Como ya ha terminado su vaciado de horno, restauramos las galletas recogidas a 0
         galletasRecogidas = 0;
         accion = "ESPERANDO";
+        log.log("Empaquetador["+identificador+"] -->"+accion);
     }
     
 }

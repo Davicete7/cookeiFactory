@@ -10,6 +10,7 @@ package Server;
 
 
 //Importes
+import Logger.Logger;
 import java.io.Serializable;
 
 
@@ -31,6 +32,9 @@ public class Horno extends Thread implements Serializable
     private boolean estaEmpaquetando = false;
     private String accion;
     
+    //Para los logs
+    private Logger log = Logger.getInstance();
+    
     
     
     //Contructor
@@ -51,6 +55,7 @@ public class Horno extends Thread implements Serializable
     public boolean getEstaHorneando(){return estaHorneando;}
     public boolean getEstaEmpaquetando(){return estaEmpaquetando;}
     public String getAccion(){return accion;}
+    public int contadorLog = 0;
     
     
     //Setters
@@ -94,12 +99,20 @@ public class Horno extends Thread implements Serializable
             //Un horno nunca va a parar de trabajar
             while(true)
             {
-                //Si esta aqui significa que esta en estado de llenado
-                accion = "LLENANDOSE";
+                //Solo lo escribimos una vez en el log cada vez que se empieza a llenar
+                if(contadorLog == 0)
+                {
+                    //Si esta aqui significa que esta en estado de llenado
+                    accion = "LLENANDOSE";
+                    log.log("Horno["+identificador+"] -->"+accion);
+                    contadorLog++;
+                }
+                
                 if(cantidadGalletas == capacidadMaxima && !estaHorneando)
                 {
                     //Comienza el horneado
                     accion = "HORNEANDO";
+                    log.log("Horno["+identificador+"] -->"+accion);
                     estaHorneando = true;
                     Thread.sleep(8000);             //Tardan en hornear la tanda 8000 milisegundos (8 segundos)
                     
@@ -111,6 +124,7 @@ public class Horno extends Thread implements Serializable
                     
                     //Empieza empaquetado, es decir, se empieza a vaciar
                     accion = "VACIANDOSE";
+                    log.log("Horno["+identificador+"] -->"+accion);
                     estaEmpaquetando = true;
                     
                     //Avisamos al empaquetador para que vacie el horno
@@ -122,8 +136,8 @@ public class Horno extends Thread implements Serializable
                     estaEmpaquetando = false;
                     
                     
-                    
-                    
+                    //Cuando termina todo el proceso significa que ya esta vacio por lo que cambiamos el contador del log
+                    contadorLog = 0;    
                 }
                 else
                 {

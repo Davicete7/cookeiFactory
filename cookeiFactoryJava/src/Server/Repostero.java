@@ -13,10 +13,12 @@ package Server;
 
 
 //Importes
+import Logger.Logger;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
+import Logger.Logger;
 
 
 
@@ -57,7 +59,12 @@ public class Repostero extends Thread implements Serializable
     
     
         //Usaremos este objeto para la aletoridad 
-    Random aleatorio = new Random();
+    private Random aleatorio = new Random();
+    
+    
+        //Usaremos este objeto para los logs del sistema
+    private Logger log = Logger.getInstance();
+    private int contadorLog = 0;
     
     //Contructor 
     public Repostero(int _identificador, List<Horno> _listaHornos,Cafeteria _cafeteria)
@@ -80,7 +87,7 @@ public class Repostero extends Thread implements Serializable
     
 
     //Setters
-    public void setParadaManual(boolean _paradaManual){this.paradaManual = _paradaManual;System.out.println("Hola caracola"+this.paradaManual);}
+    public void setParadaManual(boolean _paradaManual){this.paradaManual = _paradaManual;}
     public void setAccion(String _accion){this.accion = _accion;}
     
     
@@ -116,16 +123,25 @@ public class Repostero extends Thread implements Serializable
 
                     //Producción de la tanda de galletas
                     accion = "PRODUCIENDO";
+                    log.log("Repostero["+identificador+"] -->"+accion);
                     Thread.sleep(2000 + aleatorio.nextInt(2001));
                     tandaGalletas = 37 + aleatorio.nextInt(9);
                     totalGalletas += tandaGalletas;
+                    log.log("Repostero["+identificador+"] =========> Ha producido "+tandaGalletas+" galletas");
 
                     //Comprobamos si hay parada manual
                     comprobamosParadaManual();
 
                     //Depositamos las galletas en cualquier horno disponible
                     accion = "DEPOSITANDO";
+                    log.log("Repostero["+identificador+"] -->"+accion);
                     tandaGalletasDesperdiciadas = depositarGalletas(tandaGalletas);
+                    
+                    //Si se han desperdiciado galletas se registrara en el log
+                    if(tandaGalletasDesperdiciadas > 0)
+                    {
+                        log.log("Repostero["+identificador+"] =========> Ha desperdiciado "+tandaGalletasDesperdiciadas+" galletas");
+                    }
                     totalGalletasDesperdiciadas += tandaGalletasDesperdiciadas;
 
                     
@@ -145,6 +161,7 @@ public class Repostero extends Thread implements Serializable
                 
                 //Descanso hasta que vuelvan a generar más tandas de galletas
                 accion = "DESCANSANDO";
+                log.log("Repostero["+identificador+"] -->"+accion);
                 Thread.sleep(3000 + aleatorio.nextInt(3001));
             }
             catch (InterruptedException error)
@@ -175,6 +192,9 @@ public class Repostero extends Thread implements Serializable
                     if(listaHornos.get(indexHornos).getCantidadGalletas() < listaHornos.get(indexHornos).getCapacidadMaxima() && !listaHornos.get(indexHornos).getEstaHorneando() && !listaHornos.get(indexHornos).getEstaEmpaquetando())
                     {
                         _tandaGalletasDesperdiciadas = listaHornos.get(indexHornos).añadirGalletas(_tandaGalletas);
+                        //Registramos cuantas galletas se han depositado en el horno
+                        int galletasDepositadasHorno = _tandaGalletas - _tandaGalletasDesperdiciadas;
+                        log.log("Repostero["+identificador+"] =========> Ha depositado "+galletasDepositadasHorno+" galletas en el Horno["+listaHornos.get(indexHornos).getIdentificador()+"]");
                         depositoTerminado = true;
                         break;  //Break del bucle for
                     }
@@ -216,8 +236,17 @@ public class Repostero extends Thread implements Serializable
             {
                 //Espera activa
                 accion = "BLOQUEADO";
+                
+                //Solo mostramos una vez en el log que esta bloqueado
+                if(contadorLog == 0)
+                {
+                    log.log("Repostero["+identificador+"] -->"+accion);
+                    contadorLog++;
+                }
                 Thread.sleep(1000);
             }
+            //Si pasa por aqui significa que puede escribir el log de que esta bloqueado, entonces
+            contadorLog = 0;
         }
         catch(InterruptedException error)
         {
