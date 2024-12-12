@@ -131,11 +131,5 @@ public class Cafeteria implements Serializable
             //Nos aseguramos de confirmar que hemos sido atentidos siempre
             semaforoClienteAtendido.release();  
         }
-        
-        
-        
-        
-        
-
     }
 }

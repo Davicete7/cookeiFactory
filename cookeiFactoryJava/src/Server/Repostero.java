@@ -53,9 +53,7 @@ public class Repostero extends Thread implements Serializable
     
     
 
-        //Para saber si hay hornoDisponibles
-    private boolean hornosDisponinles = true;       //Por defecto siempre estaran disponibles hasta que se marque que estan todos llenos
-    
+
     
     
         //Usaremos este objeto para la aletoridad 
@@ -235,11 +233,11 @@ public class Repostero extends Thread implements Serializable
             while(paradaManual)
             {
                 //Espera activa
-                accion = "BLOQUEADO";
                 
                 //Solo mostramos una vez en el log que esta bloqueado
                 if(contadorLog == 0)
                 {
+                    accion = "BLOQUEADO";
                     log.log("Repostero["+identificador+"] -->"+accion);
                     contadorLog++;
                 }
